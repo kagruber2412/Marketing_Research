@@ -13,6 +13,7 @@ order: 1
 * Understand how to use cross tables in practice and be able to interpret the results of different associated statistics
 * **`R`**: working with vector and matrix objects (indexing, numerical operations), simple graph annotations.
 
+
 ## Descriptive statistics
 
 * to obtain an initial idea of the dataset
@@ -20,7 +21,6 @@ order: 1
 * to determine the most important characteristics of different variables in a dataset
 * different for nominal/ordinal (discrete) and metric (continuous) data = **levels of measurement**
 
-## Levels of measurement
 
 ### Discrete data
 
@@ -41,6 +41,7 @@ order: 1
   
   **`R`** data type: factor, numeric (integer)
 
+
 ### Continuous data
 
 * **Interval scale:** scales with an arbitrary defined zero point
@@ -49,7 +50,6 @@ order: 1
   
   e.g.: celsius scale, direction (measured in degrees from true or magnetic north), also sometimes rating scales (attitude and opinion scales)
   
-
 * **Ratio scale:** possesses a meaningful zero value, most measurement in the physical sciences and engineering is done on ratio scales
 
   mathematical operations: $\star$,$\div$
@@ -59,28 +59,29 @@ order: 1
   **`R`** data type: numeric (double)
 
 
-## Discrete variables: Example (1)
+# Discrete variables
 
+## Frequency tables
 
-## Discrete variables: Example (2)
+**Usage:**
 
-What were the most common words in Trump's tweets?
+* To obtain a count of the number of responses associated with different values of **one** variable.
+* To indicate how scores of respondents are distributed over meaningful categories.
 
+**Possible research questions for frequency tables**
 
-## Discrete variables: Frequency tables (1)
+* What is the range of response values?
+* What is the distribution of the responses? (e.g. highest? lowest?)
+* How does it look like when responses are collapsed? (e.g. if there are few responses in some categories)
+* Is there a substantial (e.g. neutral) response?
+* How large is the missing data component and what effect does it have (on the results)?
 
-* to obtain a count of the number of responses associated with different values of **one** variable
-* to indicate how scores of respondents are distributed over meaningful categories
 
 **Example:** *Trump's twitter behavior*
+
 5109 words obtained from tweets based on Trump's phones (during the presidential election campaign in 2016) had been categorized into 10 sentiments using the NRC Word-Emotion Association lexicon.
 
 **Research question:** How is the word sentiment of tweets distributed?
-
-
-## Discrete variables: Frequency tables (2)
-
-* obtain how responses are distributed over the range of possible values (number and percentages for each response category)
 
 ```
 # generate the data
@@ -100,6 +101,98 @@ head(dat)
 # obtain a frequency table
 table(dat)
 ```
+
+**relative values**
+
+```
+> table(dat)/sum(table(dat))
+
+       anger anticipation      disgust         fear          joy
+  0.09590918   0.08377373   0.05950284   0.07888041   0.06948522
+    negative     positive      sadness     surprise        trust
+  0.16050108   0.18927383   0.08807986   0.05206498   0.12252887
+```
+
+**percentages**
+
+```
+table(dat)/sum(table(dat))*100
+
+       anger anticipation      disgust         fear          joy
+    9.590918     8.377373     5.950284     7.888041     6.948522
+    negative     positive      sadness     surprise        trust
+   16.050108    18.927383     8.807986     5.206498    12.252887
+```
+
+**total number of observations**
+```
+length(dat)
+
+# gives the same result (but taking NAs into account)
+sum(table(dat))
+```
+
+
+## Bar charts
+
+**Usage:**
+
+* To display the results from a frequency table in a graph.
+* To depict the number of observations for every possible observed response (= visual representation of the data makes it easier to see patterns in it)
+
+```
+# frequencies
+barplot(table(dat))
+
+# percentages
+barplot(table(dat)/sum(table(dat))*100)
+
+# change the colors
+barplot(table(dat)/sum(table(dat))*100, col="grey40")
+
+# delete the box borders
+barplot(table(dat)/sum(table(dat))*100, col="grey40", border=NA)
+
+# rotate the bar labels
+barplot(table(dat)/sum(table(dat))*100, col="grey40", border=NA, las=3)
+```
+
+**Hint:** list of possible (named) colors available
+```
+colors()
+```
+
+For more annotations try
+``` 
+?barplot
+```
+
+
+# Continuous variables
+
+## Measures of location and dispersion
+
+**Usage**
+
+* To determine the most important characteristics of non-nominal (i.e. \textbf{ordinal} or \textbf{continuous}) data.
+* To summarize the characteristics of a variable in one statistical indicator.
+* To provide an indication of the variability in a set of scores on a variable.
+
+**Measures of location**
+
+* **mean** $\bar{x}$ (average):
+
+  $$\bar{x} = \frac{1}{n} \sum_{i = 1}^{n} x_i$$
+  
+  e.g.: $\bar{x} = (7 + 10 + 16 + 9 + 12 + 13 + 9 + 8 + 10 + 9)/10 = 10.3$}
+  
+* **mode** (most frequent value):
+  
+  e.g.: $ mode = 9$ (appears 3 times)
+
+* **median** $\tilde{x}$ (value in the middle):
+
+  e.g.: 7 8 9 9 $\underbrace{9 \ 10}_{\tilde{x} = 9 + 10}$ 10 12 13 16, $\tilde{x} = 9.5$
 
 
 
