@@ -41,5 +41,23 @@ order: 1
   
   **`R`** data type: factor, numeric (integer)
 
+### Continuous data
+
+* **Interval scale:** scales with an arbitrary defined zero point
+  
+  mathematical operations: $+$, $-$
+  
+  e.g.: celsius scale, direction (measured in degrees from true or magnetic north), also sometimes rating scales (attitude and opinion scales)
+  
+
+* **Ratio scale:** possesses a meaningful zero value, most measurement in the physical sciences and engineering is done on ratio scales
+
+  mathematical operations: $\star$,$\div$
+  
+  e.g.: kelvin scale, age, income, price, costs, sales revenue, sales volume, market share, ...
+  
+  **`R`** data type: numeric (double)
+
+
 
 
