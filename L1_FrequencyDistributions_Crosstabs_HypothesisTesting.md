@@ -59,5 +59,47 @@ order: 1
   **`R`** data type: numeric (double)
 
 
+## Discrete variables: Example (1)
+
+
+## Discrete variables: Example (2)
+
+What were the most common words in Trump's tweets?
+
+
+## Discrete variables: Frequency tables (1)
+
+* to obtain a count of the number of responses associated with different values of **one** variable
+* to indicate how scores of respondents are distributed over meaningful categories
+
+**Example:** *Trump's twitter behavior*
+5109 words obtained from tweets based on Trump's phones (during the presidential election campaign in 2016) had been categorized into 10 sentiments using the NRC Word-Emotion Association lexicon.
+
+**Research question:** How is the word sentiment of tweets distributed?
+
+
+## Discrete variables: Frequency tables (2)
+
+* obtain how responses are distributed over the range of possible values (number and percentages for each response category)
+
+```
+# generate the data
+name <- c("anger", "anticipation", "disgust", "fear",
+            "joy", "negative", "positive", "sadness",
+            "surprise", "trust")
+dat <- c(rep(name[1],490), rep(name[2],428), rep(name[3],304),
+         rep(name[4],403), rep(name[5],355), rep(name[6],820),
+         rep(name[7],967), rep(name[8],450), rep(name[9],266),
+         rep(name[10],626))
+```
+```
+# inspect data
+head(dat)
+```
+```
+# obtain a frequency table
+table(dat)
+```
+
 
 
