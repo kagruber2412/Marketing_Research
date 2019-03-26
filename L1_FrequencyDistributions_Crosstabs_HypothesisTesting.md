@@ -230,4 +230,22 @@ head(wdata)
 summary(wdata)
 ```
 
+**Obtain additional information**
+
+* **variance:** mean squared deviation
+* **std. dev.:** square root of the mean squared deviation from the mean
+* **range:** spread of data (difference between lowest and highest value)
+* **median:** value in the middle
+
+```
+var(wdata$female)
+
+sd(wdata$female)
+
+range(wdata$female)
+
+median(wdata$female)
+
+mean(wdata$female)
+```
 
