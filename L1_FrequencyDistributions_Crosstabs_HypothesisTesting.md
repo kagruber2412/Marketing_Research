@@ -172,7 +172,7 @@ For more annotations try
 
 ## Measures of location and dispersion
 
-**Usage**
+**Usage:**
 
 * To determine the most important characteristics of non-nominal (i.e. \textbf{ordinal} or \textbf{continuous}) data.
 * To summarize the characteristics of a variable in one statistical indicator.
@@ -180,19 +180,54 @@ For more annotations try
 
 **Measures of location**
 
-* **mean** $\bar{x}$ (average):
+* **Mean** $\bar{x}$ (average):
 
   $$\bar{x} = \frac{1}{n} \sum_{i = 1}^{n} x_i$$
   
   e.g.: $\bar{x} = (7 + 10 + 16 + 9 + 12 + 13 + 9 + 8 + 10 + 9)/10 = 10.3$}
   
-* **mode** (most frequent value):
+* **Mode** (most frequent value):
   
   e.g.: $ mode = 9$ (appears 3 times)
 
-* **median** $\tilde{x}$ (value in the middle):
+* **Median** $\tilde{x}$ (value in the middle):
 
   e.g.: 7 8 9 9 $\underbrace{9 \ 10}_{\tilde{x} = 9 + 10}$ 10 12 13 16, $\tilde{x} = 9.5$
+  
+ **Measures of dispersion**
+ 
+* **variance** $s^2$ (mean squared deviation of the mean):
 
+  $$s^2 = \frac{1}{n-1} \sum_{i=1}^{n} (x_i - \bar{x})^2$$
+
+  e.g.: $((7 - 10.3)^2 + (10 - 10.3)^2 + \ldots + (9 - 10.3)^2)/(10-1) = 7.1222$
+
+* **standard deviation** $s$ (square root of the variance):
+
+  e.g.: $s = \sqrt{7.1222} = 2.6687$\\
+
+* **range** (spread of the data): $max - min$
+
+  e.g.: $16 - 7 = 9$
+
+* **interquartile distance** $QD$ (difference between 25th and 75th percentile):
+
+  QD = Q_3 - Q_1
+
+  e.g.: 7 8 $\underbrace{9 \ 9}_{25 \%}$ $\underbrace{9 \ 10}_{\tilde{x} = 50 \%}$ $\underbrace{10 \ 12}_{75 \%}$ 13 16, QD = 12 - 9 = 3
+
+```
+# generate some normal distributed fake weight data
+set.seed(1234)
+female <- rnorm(200, 55)
+male <- rnorm(200, 58)
+wdata <- data.frame(female=female, male=male)
+
+# inspect the data
+head(wdata)
+
+# summary statistics for the two variables
+summary(wdata)
+```
 
 
