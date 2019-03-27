@@ -1,5 +1,5 @@
 ---
-title: "Cross tabulation, elementary hypothesis testing"
+title: "Univariate Tests"
 sidebar: toc
 category: getting-started
 order: 1
