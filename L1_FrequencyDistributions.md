@@ -5,12 +5,10 @@ category: getting-started
 order: 1
 ---
 
-# Contents
+# Objectives
 
 * Create descriptive statistics and graphs.
 * Calculate means and standard deviations of a distribution of observations.
-* Conduct $\chi^2$ analyses and tests.
-* Understand how to use cross tables in practice and be able to interpret the results of different associated statistics.
 * **`R`**: working with vector and matrix objects (indexing, numerical operations), simple graph annotations.
 
 ![](./Assets/statistics.png)
