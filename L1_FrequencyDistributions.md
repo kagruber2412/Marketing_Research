@@ -13,7 +13,7 @@ order: 1
 * Understand how to use cross tables in practice and be able to interpret the results of different associated statistics
 * **`R`**: working with vector and matrix objects (indexing, numerical operations), simple graph annotations.
 
-![](./Ressources/statistics.png)
+![](./Ressources/Assets/statistics.png)
 
 
 ## Descriptive statistics
@@ -288,6 +288,8 @@ curve(dnorm(x, mean(x), sd(x)), col = "red", lwd = 4, add = TRUE)
 ![](./Ressources/p5_R.jpg)
 
 # Summary descriptive statistics
+
+![](./Ressources/Assets/Summary_Table.png)
 
 **Note:** $\bar{x}$ and $s^2$ are only meaningful if the data is **symmetrically** distributed and **single peaked**!
 
