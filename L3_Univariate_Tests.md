@@ -18,6 +18,8 @@ order: 1
 
 ## Student t-test for independent sample means
 
+![](./Assets/intro.PNG)
+
 * Examines if there is a **difference in means** between **two independent groups** (= observations are drawn from different populations, e.g. males and females, buyers and non-buyers, ...).
 
 * Judges the difference between two group means relative to their variability:
