@@ -30,7 +30,7 @@ $$ t = \frac{effect \ size}{noise}$$
 
 -> large differences + low variability: **easy to detect**
 
-![](./Assets/Ttest1.PNG)
+![](./Assets/Ttest1.png)
 
 
 **Assumptions:**
@@ -66,7 +66,6 @@ rbind(mean., sd.)
 # a more advanced histogramm:
 
 hist(female, col=adjustcolor("purple", 0.6), main="", breaks=15, border=NA, prob=TRUE, xlab="Body weight", ylim=c(0,0.06))
-
 hist(male, col=adjustcolor("steelblue", 0.6), add=T, breaks=15, border=NA, prob=TRUE)
 
 lines(density(female, n=150, cut=5)$x, density(female, n=150, cut=5)$y, lwd=4, col="purple")
@@ -76,14 +75,18 @@ lines(density(male, n=150, cut=5)$x, density(male, n=150, cut=5)$y, lwd=4, col="
 legend("topleft", legend=c("female","male"), fill=c("purple","steelblue"), border=NA, bty="n", cex=2)
 ```
 
-## Excursus: Boxplot
+![](./Assets/ex1.pdf)
 
-![](./Assets/boxplot.PNG)
+
+## Excursus: Boxplot
 
 * Graphical method for depicting groups of numerical data through their quartiles.
 * The spacings between the different parts of the box indicate the degree of dispersion (spread) and skewness in the data, and shows outliers.
 * The bottom and top of the box are always the first (25th) and third (75th) percentile, the band inside the box is always the second (50th) percentile (the median).
 * The whiskers are represented as the extend of $1.5$ times the difference between the 25th and the 75th percentile.
+
+![](./Assets/boxplot.PNG)
+
 
 ```
 boxplot(weight ~ sex, main="Boxplot: Body weight data", col=c("purple","steelblue"), data=wdata)
@@ -96,11 +99,16 @@ boxplot(weight ~ sex, main="Boxplot: Body weight data", col=c("purple","steelblu
 abline(h=tapply(wdata$weight, wdata$group, mean)[1], cex=3, lwd=3, col="red")
 # mean of male group
 abline(h=tapply(wdata$weight, wdata$group, mean)[2], cex=3, lwd=3, col="red", lty="dotted")
+```
 
+```
 # adding information 2: boxplot with data points
 boxplot(weight ~ sex, main="Boxplot: Body weight data", col=c("purple","steelblue"), data=wdata)
 stripchart(weight ~ sex, vertical = TRUE, data = wdata, method = "jitter", jitter=0.05, add = TRUE, pch = 16, col = adjustcolor("grey40",0.4), cex=1.25)
 ```
+
+![](./Assets/t1c.pdf)
+
 
 ### Check Assumption 3: Homogeneity of variances.
 
@@ -172,6 +180,9 @@ sd. <-  tapply(wdata2$weight, wdata2$group, sd)
 IQR. <-  tapply(wdata2$weight, wdata2$group, IQR)
 rbind(mean., median., sd., IQR.)
 ```
+
+![](./Assets/t3.pdf)
+
 
 ```
 wilcox.test(wdata2$weight ~ wdata2$group) # wilcoxon rank-sum test
