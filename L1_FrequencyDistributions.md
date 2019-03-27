@@ -8,6 +8,7 @@ order: 1
 # Objectives
 
 * Create descriptive statistics and graphs.
+* Be able to give a short and accurate numerical and graphical summary of the data used for statistical analysis.
 * Calculate means and standard deviations of a distribution of observations.
 * **`R`**: working with vector and matrix objects (indexing, numerical operations), simple graph annotations.
 
