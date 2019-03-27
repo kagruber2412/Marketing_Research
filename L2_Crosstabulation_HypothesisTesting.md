@@ -25,6 +25,7 @@ order: 1
 * Judges the difference between two group means relative to their variability:
 
 $$ t = \frac{\bar{x}_1 - \bar{x}_2}{\sqrt{\frac{\sigma^2_1}{n_1} + \frac{\sigma^2_2}{n_2}}}, \ \ with \ df = n_1 + n_2 - 2$$
+
 $$ t = \frac{effect \ size}{noise}$$
 
 -> small differences + loads of variability: **hard to detect**
@@ -55,4 +56,44 @@ head(wdata)
 mean. <- tapply(wdata$weight, wdata$group, mean)
 sd. <-  tapply(wdata$weight, wdata$group, sd)
 rbind(mean., sd.)
+```
+
+### Check assumption 2: Normal distribution within both groups.
+
+```
+# a more advanced histogramm:
+
+hist(female, col=adjustcolor("purple", 0.6), main="", breaks=15, border=NA, prob=TRUE, xlab="Body weight", ylim=c(0,0.06))
+
+hist(male, col=adjustcolor("steelblue", 0.6), add=T, breaks=15, border=NA, prob=TRUE)
+
+lines(density(female, n=150, cut=5)$x, density(female, n=150, cut=5)$y, lwd=4, col="purple")
+lines(density(male, n=150, cut=5)$x, density(male, n=150, cut=5)$y, lwd=4, col="steelblue")
+
+# add a legend to the plot
+legend("topleft", legend=c("female","male"), fill=c("purple","steelblue"), border=NA, bty="n", cex=2)
+```
+
+## Excursus: Boxplot
+
+* Graphical method for depicting groups of numerical data through their quartiles.
+* The spacings between the different parts of the box indicate the degree of dispersion (spread) and skewness in the data, and shows outliers.
+* The bottom and top of the box are always the first (25th) and third (75th) percentile, the band inside the box is always the second (50th) percentile (the median).
+* The whiskers are represented as the extend of $1.5$ times the difference between the 25th and the 75th percentile.
+
+```
+boxplot(weight ~ sex, main="Boxplot: Body weight data", col=c("purple","steelblue"), data=wdata)
+```
+
+```
+# adding information 1: boxplot with data mean
+boxplot(weight ~ sex, main="Boxplot: Body weight data", col=c("purple","steelblue"), data=wdata)
+# mean of female group
+abline(h=tapply(wdata$weight, wdata$group, mean)[1], cex=3, lwd=3, col="red")
+# mean of male group
+abline(h=tapply(wdata$weight, wdata$group, mean)[2], cex=3, lwd=3, col="red", lty="dotted")
+
+# adding information 2: boxplot with data points
+boxplot(weight ~ sex, main="Boxplot: Body weight data", col=c("purple","steelblue"), data=wdata)
+stripchart(weight ~ sex, vertical = TRUE, data = wdata, method = "jitter", jitter=0.05, add = TRUE, pch = 16, col = adjustcolor("grey40",0.4), cex=1.25)
 ```
