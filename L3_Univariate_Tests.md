@@ -62,8 +62,6 @@ rbind(mean., sd.)
 
 ### Check assumption 2: Normal distribution within both groups.
 
-![](./Assets/paranormal.png)
-
 ```
 # a more advanced histogramm:
 
@@ -105,8 +103,6 @@ stripchart(weight ~ sex, vertical = TRUE, data = wdata, method = "jitter", jitte
 ```
 
 ### Check Assumption 3: Homogeneity of variances.
-
-![](./Assets/dispersion.png)
 
 * **$H_0$: both samples have equal variances**.
 * $H_1$ : the variances differ.
