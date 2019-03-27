@@ -1,5 +1,5 @@
 ---
-title: "Frequency distribution, cross tabulation, elementary hypothesis testing"
+title: "Frequency distributions"
 sidebar: toc
 category: getting-started
 order: 1
