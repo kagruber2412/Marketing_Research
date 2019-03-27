@@ -149,7 +149,7 @@ sum(table(dat))
 * To display the results from a frequency table in a graph.
 * To depict the number of observations for every possible observed response (= visual representation of the data makes it easier to see patterns in it).
 
-What does this mean?
+What can this mean?
 
 ![](./Assets/pie.jpg)
 
@@ -191,7 +191,7 @@ For more annotations try:
 
 **Usage:**
 
-* To determine the most important characteristics of non-nominal (i.e. \textbf{ordinal} or \textbf{continuous}) data.
+* To determine the most important characteristics of non-nominal (i.e. **ordinal** or **continuous**) data.
 * To summarize the characteristics of a variable in one statistical indicator.
 * To provide an indication of the variability in a set of scores on a variable.
 
@@ -268,7 +268,9 @@ mean(wdata$female)
 
 ## Histogramms
 
-* display the distribution of a **continuous** variable by a number of **created** groups (continuous = here: nearly all observations have a different value)
+**Usage:**
+
+* To display the distribution of a **continuous** variable by a number of **created** groups (continuous = here: nearly all observations have a different value).
 
 ```
 # make a histogramm of the female weight
