@@ -17,7 +17,7 @@ order: 1
 
 ![](./Assets/Summary_Tests.png)
 
-# 2-samples
+# Two-samples
 
 ## Student t-test for independent sample means
 
