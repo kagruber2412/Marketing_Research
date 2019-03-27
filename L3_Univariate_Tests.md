@@ -29,7 +29,7 @@ order: 1
 -> large differences + low variability: **easy to detect**
 
 
-**Assumptions:**
+### Assumptions:
 
 * Interval scaled variables and two independent samples
 * Normal distributed data in each group (two sample means)
@@ -56,7 +56,7 @@ sd. <-  tapply(wdata$weight, wdata$group, sd)
 rbind(mean., sd.)
 ```
 
-### Check assumption 2: Normal distribution within both groups.
+**Check assumption 2: Normal distribution within both groups.**
 
 ```
 # a more advanced histogramm:
@@ -106,7 +106,7 @@ stripchart(weight ~ sex, vertical = TRUE, data = wdata, method = "jitter", jitte
 ![](./Assets/t1c.pdf)
 
 
-### Check Assumption 3: Homogeneity of variances.
+**Check Assumption 3: Homogeneity of variances.**
 
 * **$H_0$: both samples have equal variances**.
 * $H_1$ : the variances differ.
@@ -122,7 +122,7 @@ rbind(mean., sd.)
 bartlett.test(wdata$weight ~ wdata$group)
 ```
 
-### Conduct independent samples t-test
+**Conduct independent samples t-test.**
 
 * $H_0$: the means of both samples are equal (there is no difference between the means of the two samples)
 * $H_1$: the means of both samples differ
