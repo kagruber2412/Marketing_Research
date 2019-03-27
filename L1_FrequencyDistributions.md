@@ -249,3 +249,27 @@ median(wdata$female)
 mean(wdata$female)
 ```
 
+## Histogramms
+
+* display the distribution of a **continuous** variable by a number of **created** groups (continuous = here: nearly all observations have a different value)
+
+```
+# make a histogramm of the female weight
+hist(wdata$female, main="Female weight")
+
+# change the color
+hist(wdata$female, main="Female weight", col="grey40")
+
+# delete the bar border
+hist(wdata$female, main="Female weight", col="grey40", border=NA)
+
+# add the normal distribution curve to the histogramm (set frequency to false)
+hist(wdata$female, main="Female weight", col="grey40", border=NA, freq=FALSE)
+x <- wdata$female
+curve(dnorm(x, mean(x), sd(x)), col = "red", lwd = 4, add = TRUE)
+```
+
+# Summary descriptive statistics
+
+**Note:** $\bar{x}$ and $s^2$ are only meaningful if the data is **symmetrically** distributed and **single peaked**!
+
