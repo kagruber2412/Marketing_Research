@@ -81,7 +81,7 @@ legend("topleft", legend=c("female","male"), fill=c("purple","steelblue"), borde
 * The bottom and top of the box are always the first (25th) and third (75th) percentile, the band inside the box is always the second (50th) percentile (the median).
 * The whiskers are represented as the extend of $1.5$ times the difference between the 25th and the 75th percentile.
 
-![](./Assets/boxplot.png)
+![](./Assets/Boxplot.png)
 
 
 ```
