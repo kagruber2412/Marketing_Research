@@ -29,7 +29,7 @@ order: 1
 -> large differences + low variability: **easy to detect**
 
 
-### Assumptions:
+### Assumptions
 
 * Interval scaled variables and two independent samples
 * Normal distributed data in each group (two sample means)
@@ -158,6 +158,7 @@ t.test(wdata$weight ~ wdata$group, var.equal = TRUE)
 * Compares the difference in the location (**mean ranks**) of **two independent samples**.
 * Has greater efficiency than the t-test on non-normal distributions.
 * Particularly suitable for small sample sizes ($n_1$, $n_2$ < 10).
+
 
 **Example:** *skewed data, unequal variances*
 
