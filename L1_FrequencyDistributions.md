@@ -13,7 +13,7 @@ order: 1
 * Understand how to use cross tables in practice and be able to interpret the results of different associated statistics
 * **`R`**: working with vector and matrix objects (indexing, numerical operations), simple graph annotations.
 
-![](./Ressources/Assets/statistics.png)
+![](./Assets/statistics.png)
 
 
 ## Descriptive statistics
@@ -85,7 +85,7 @@ order: 1
 
 **Research question example 1:** What were the most common words in Trump's tweeds?
 
-![](./Ressources/Trump_Tweets.PNG)
+![](./Assets/Trump_Tweets.PNG)
 
 **Research question example 2:** How is the word sentiment of tweets distributed?
 
@@ -164,7 +164,7 @@ barplot(table(dat)/sum(table(dat))*100, col="grey40", border=NA)
 barplot(table(dat)/sum(table(dat))*100, col="grey40", border=NA, las=3)
 ```
 
-![](./Ressources/p3_R.jpg)
+![](./Assets/p3_R.jpg)
 
 **Hint:** list of possible (named) colors available
 
@@ -179,9 +179,9 @@ For more annotations try
 
 **Don't do:**
 
-![](./Ressources/pie.jpg)
+![](./Assets/pie.jpg)
 
-![](./Ressources/piechart.jpg)
+![](./Assets/piechart.jpg)
 
 
 # Continuous variables
@@ -285,11 +285,11 @@ x <- wdata$female
 curve(dnorm(x, mean(x), sd(x)), col = "red", lwd = 4, add = TRUE)
 ```
 
-![](./Ressources/p5_R.jpg)
+![](./Assets/p5_R.jpg)
 
 # Summary descriptive statistics
 
-![](./Ressources/Assets/Summary_Table.png)
+![](./Assets/Summary_Table.png)
 
 **Note:** $\bar{x}$ and $s^2$ are only meaningful if the data is **symmetrically** distributed and **single peaked**!
 
