@@ -195,7 +195,7 @@ For more annotations try:
 * To summarize the characteristics of a variable in one statistical indicator.
 * To provide an indication of the variability in a set of scores on a variable.
 
-**Measures of location**
+### Measures of location
 
 * **Mean** $\bar{x}$ (average):
 
@@ -211,7 +211,7 @@ For more annotations try:
 
   e.g.: 7 8 9 9 $\underbrace{9 \ 10}_{\tilde{x} = 9 + 10}$ 10 12 13 16, $\tilde{x} = 9.5$
   
- **Measures of dispersion**
+ ### Measures of dispersion
  
 * **variance** $s^2$ (mean squared deviation of the mean):
 
@@ -288,7 +288,7 @@ curve(dnorm(x, mean(x), sd(x)), col = "red", lwd = 4, add = TRUE)
 
 ![](./Assets/p5_R.png)
 
-# Summary descriptive statistics
+## Summary descriptive statistics
 
 ![](./Assets/Summary_Table.png)
 
