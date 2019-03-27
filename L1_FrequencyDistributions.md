@@ -145,7 +145,12 @@ sum(table(dat))
 **Usage:**
 
 * To display the results from a frequency table in a graph.
-* To depict the number of observations for every possible observed response (= visual representation of the data makes it easier to see patterns in it)
+* To depict the number of observations for every possible observed response (= visual representation of the data makes it easier to see patterns in it).
+
+What does this mean?
+
+![](./Assets/pie.jpg)
+
 
 ```
 # frequencies
@@ -166,22 +171,16 @@ barplot(table(dat)/sum(table(dat))*100, col="grey40", border=NA, las=3)
 
 ![](./Assets/p3_R.jpg)
 
-**Hint:** list of possible (named) colors available
+**Hint** list of possible (named) colors available:
 
 ```
 colors()
 ```
 
-For more annotations try
+For more annotations try:
 ``` 
 ?barplot
 ```
-
-**Don't do:**
-
-![](./Assets/pie.jpg)
-
-![](./Assets/piechart.jpg)
 
 
 # Continuous variables
