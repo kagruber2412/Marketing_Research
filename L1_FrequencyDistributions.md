@@ -13,6 +13,8 @@ order: 1
 * Understand how to use cross tables in practice and be able to interpret the results of different associated statistics
 * **`R`**: working with vector and matrix objects (indexing, numerical operations), simple graph annotations.
 
+![](./Ressources/statistics.png)
+
 
 ## Descriptive statistics
 
@@ -81,7 +83,11 @@ order: 1
 
 5109 words obtained from tweets based on Trump's phones (during the presidential election campaign in 2016) had been categorized into 10 sentiments using the NRC Word-Emotion Association lexicon.
 
-**Research question:** How is the word sentiment of tweets distributed?
+**Research question example 1:** What were the most common words in Trump's tweeds?
+
+![](./Ressources/Trump_Tweets.PNG)
+
+**Research question example 2:** How is the word sentiment of tweets distributed?
 
 ```
 # generate the data
@@ -125,6 +131,7 @@ table(dat)/sum(table(dat))*100
 ```
 
 **total number of observations**
+
 ```
 length(dat)
 
@@ -157,7 +164,10 @@ barplot(table(dat)/sum(table(dat))*100, col="grey40", border=NA)
 barplot(table(dat)/sum(table(dat))*100, col="grey40", border=NA, las=3)
 ```
 
+![](./Ressources/p3_R.jpg)
+
 **Hint:** list of possible (named) colors available
+
 ```
 colors()
 ```
@@ -166,6 +176,12 @@ For more annotations try
 ``` 
 ?barplot
 ```
+
+**Don't do:**
+
+![](./Ressources/pie.jpg)
+
+![](./Ressources/piechart.jpg)
 
 
 # Continuous variables
@@ -268,6 +284,8 @@ hist(wdata$female, main="Female weight", col="grey40", border=NA, freq=FALSE)
 x <- wdata$female
 curve(dnorm(x, mean(x), sd(x)), col = "red", lwd = 4, add = TRUE)
 ```
+
+![](./Ressources/p5_R.jpg)
 
 # Summary descriptive statistics
 
