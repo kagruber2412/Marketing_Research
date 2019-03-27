@@ -18,8 +18,6 @@ order: 1
 
 ## Student t-test for independent sample means
 
-![](./Assets/intro.PNG)
-
 * Examines if there is a **difference in means** between **two independent groups** (= observations are drawn from different populations, e.g. males and females, buyers and non-buyers, ...).
 
 * Judges the difference between two group means relative to their variability:
@@ -32,11 +30,15 @@ $$ t = \frac{effect \ size}{noise}$$
 
 -> large differences + low variability: **easy to detect**
 
+![](./Assets/Ttest1.PNG)
+
+
 **Assumptions:**
 
 * Interval scaled variables and two independent samples
 * Normal distributed data in each group (two sample means)
 * Equal group variances (one pooled variance)
+
 
 **Example:** *human weight data*
 
@@ -60,6 +62,8 @@ rbind(mean., sd.)
 
 ### Check assumption 2: Normal distribution within both groups.
 
+![](./Assets/paranormal.png)
+
 ```
 # a more advanced histogramm:
 
@@ -75,6 +79,8 @@ legend("topleft", legend=c("female","male"), fill=c("purple","steelblue"), borde
 ```
 
 ## Excursus: Boxplot
+
+![](./Assets/boxplot.PNG)
 
 * Graphical method for depicting groups of numerical data through their quartiles.
 * The spacings between the different parts of the box indicate the degree of dispersion (spread) and skewness in the data, and shows outliers.
@@ -99,6 +105,8 @@ stripchart(weight ~ sex, vertical = TRUE, data = wdata, method = "jitter", jitte
 ```
 
 ### Check Assumption 3: Homogeneity of variances.
+
+![](./Assets/dispersion.png)
 
 * **$H_0$: both samples have equal variances**.
 * $H_1$ : the variances differ.
