@@ -22,15 +22,11 @@ order: 1
 
 * Judges the difference between two group means relative to their variability:
 
-$$ t = \frac{\bar{x}_1 - \bar{x}_2}{\sqrt{\frac{\sigma^2_1}{n_1} + \frac{\sigma^2_2}{n_2}}}, \ \ with \ df = n_1 + n_2 - 2$$
-
-$$ t = \frac{effect \ size}{noise}$$
+![](./Assets/Ttest1.png)
 
 -> small differences + loads of variability: **hard to detect**
 
 -> large differences + low variability: **easy to detect**
-
-![](./Assets/Ttest1.png)
 
 
 **Assumptions:**
