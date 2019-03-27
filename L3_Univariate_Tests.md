@@ -13,8 +13,10 @@ order: 1
 * Be able to conduct analysis of variance and know how to interpret the results.
 * **`R`**: working with data frames, advanced graph annotations, add-on packages.
 
-# Univariate tests
+# Overview
 
+
+# 2-samples
 
 ## Student t-test for independent sample means
 
