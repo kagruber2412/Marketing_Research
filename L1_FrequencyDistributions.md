@@ -12,8 +12,6 @@ order: 1
 * Calculate means and standard deviations of a distribution of observations.
 * **`R`**: working with vector and matrix objects (indexing, numerical operations), simple graph annotations.
 
-![](./Assets/statistics.png)
-
 
 ## Descriptive statistics
 
