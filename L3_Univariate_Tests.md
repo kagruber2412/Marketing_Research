@@ -74,9 +74,6 @@ lines(density(male, n=150, cut=5)$x, density(male, n=150, cut=5)$y, lwd=4, col="
 legend("topleft", legend=c("female","male"), fill=c("purple","steelblue"), border=NA, bty="n", cex=2)
 ```
 
-![](./Assets/ex1.pdf)
-
-
 ## Excursus: Boxplot
 
 * Graphical method for depicting groups of numerical data through their quartiles.
@@ -105,8 +102,6 @@ abline(h=tapply(wdata$weight, wdata$group, mean)[2], cex=3, lwd=3, col="red", lt
 boxplot(weight ~ sex, main="Boxplot: Body weight data", col=c("purple","steelblue"), data=wdata)
 stripchart(weight ~ sex, vertical = TRUE, data = wdata, method = "jitter", jitter=0.05, add = TRUE, pch = 16, col = adjustcolor("grey40",0.4), cex=1.25)
 ```
-
-![](./Assets/t1c.pdf)
 
 
 **Check Assumption 3: Homogeneity of variances.**
@@ -180,9 +175,6 @@ sd. <-  tapply(wdata2$weight, wdata2$group, sd)
 IQR. <-  tapply(wdata2$weight, wdata2$group, IQR)
 rbind(mean., median., sd., IQR.)
 ```
-
-![](./Assets/t3.pdf)
-
 
 ```
 wilcox.test(wdata2$weight ~ wdata2$group) # wilcoxon rank-sum test
