@@ -49,3 +49,25 @@ A null hypothesis may be rejected, but it can never be accepted based on a singl
 * The test statistic measures how close the sample is to the null hypothesis and follows a certain distribution (e.g. normal, t, $\chi^2$,...)
 
 
+## Accept/Reject
+
+
+# Overview of univariate tests
+
+
+# Nominal variables \& one sample
+
+## $chi^2$ test
+
+**Usage:**
+
+* to compare a certain sample proportion of a **nominal** variable with an expected population proportion
+
+**Example**: *Do the number of individuals or objects that fall in each category differ from the number you would expect?*
+* **Case 1:** equal proportions
+* **Case 2:** $\chi^2$ test of independence
+
+
+
+
+
