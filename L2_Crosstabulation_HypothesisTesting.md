@@ -35,8 +35,9 @@ A null hypothesis may be rejected, but it can never be accepted based on a singl
 * H<sub>0</sub> = mean<sub>(female)</sub> = mean<sub>(male)</sub>
 * H<sub>1</sub> = mean<sub>(female)</sub> &ne; mean<sub>(male)</sub>
 
+<p align="center">
 <img src="https://github.com/kagruber2412/Marketing_Research/blob/master/Assets/hypothesis1.png" width="350" height="350">
-
+</p>
 
 ## Choose critical value
 
@@ -44,8 +45,9 @@ A null hypothesis may be rejected, but it can never be accepted based on a singl
 * **Type II error** (&beta;): occurs when, based on the sample results, the null hypothesis is not rejected when it is in fact false.
 * **Test power** (1 - &beta;): the probability of rejecting the null hypothesis when it is false.
 
+<p align="center">
 <img src="https://github.com/kagruber2412/Marketing_Research/blob/master/Assets/significance.png" width="350" height="350">
-
+</p>
 
 ## Test selection
 
@@ -56,18 +58,21 @@ A null hypothesis may be rejected, but it can never be accepted based on a singl
 
 * The test statistic measures how close the sample is to the null hypothesis and follows a certain distribution (e.g. normal, t, &chi;<sup>2</sup>,...)
 
+<p align="center">
 <img src="https://github.com/kagruber2412/Marketing_Research/blob/master/Assets/hypothesis.png" width="700" height="350">
-
+</p>
 
 ## Accept/Reject
 
+<p align="center">
 <img src="https://github.com/kagruber2412/Marketing_Research/blob/master/Assets/hypothesis2.png" width="350" height="350"> <img src="https://github.com/kagruber2412/Marketing_Research/blob/master/Assets/hypothesis3.png" width="350" height="350">
-
+</p>
 
 # Overview of univariate tests
 
+<p align="center">
 <img src="https://github.com/kagruber2412/Marketing_Research/blob/master/Assets/Summary_Tests.png">
-
+</p>
 
 # Nominal variables \& one sample
 
