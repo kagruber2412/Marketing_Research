@@ -33,7 +33,7 @@ A null hypothesis may be rejected, but it can never be accepted based on a singl
 * $H_0 = \bar{x}_{female} = \bar{x}_{male}$
 * $H_1 = \bar{x}_{female} \neq \bar{x}_{male}$
 
-<img src="https://github.com/kagruber2412/Marketing_Research/blob/master/Assets/hypothesis1.png" width="200" height="200">
+<img src="https://github.com/kagruber2412/Marketing_Research/blob/master/Assets/hypothesis1.png" width="350" height="350">
 
 
 ## Choose significance level 
@@ -42,7 +42,7 @@ A null hypothesis may be rejected, but it can never be accepted based on a singl
 * **Type II error** ($\beta$): occurs when, based on the sample results, the null hypothesis is not rejected when it is in fact false.
 * **Test power** ($1 - \beta$): the probability of rejecting the null hypothesis when it is false.
 
-![](./Assets/significance.png)
+<img src="https://github.com/kagruber2412/Marketing_Research/blob/master/Assets/significance.png" width="350" height="350">
 
 
 ## Test selection
@@ -54,13 +54,13 @@ A null hypothesis may be rejected, but it can never be accepted based on a singl
 
 * The test statistic measures how close the sample is to the null hypothesis and follows a certain distribution (e.g. normal, t, $\chi^2$,...)
 
-![](./Assets/hypothesis.png)
+<img src="https://github.com/kagruber2412/Marketing_Research/blob/master/Assets/hypothesis.png" width="350" height="350">
 
 
 ## Accept/Reject
 
-![](./Assets/hypothesis2.png)
-![](./Assets/hypothesis3.png)
+<img src="https://github.com/kagruber2412/Marketing_Research/blob/master/Assets/hypothesis2.png" width="350" height="350">
+<img src="https://github.com/kagruber2412/Marketing_Research/blob/master/Assets/hypothesis3.png" width="350" height="350">
 
 
 # Overview of univariate tests
