@@ -195,4 +195,4 @@ chisq.test(dat)
 
 $H_0$ is **rejected** ($p < .001$). Tweets from the iPhone are significantly more likely to contain either a picture or a link.
 
-<img src="https://github.com/kagruber2412/Marketing_Research/blob/master/Assets/solution.PNG" width="700" height="350">
+<img src="https://github.com/kagruber2412/Marketing_Research/blob/master/Assets/solution.PNG">
