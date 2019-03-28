@@ -12,13 +12,13 @@ order: 1
 
 # Hypothesis testing
 
+![](./Assets/random.png)
+
 * Formulate $H_0$ \& $H_1$
 * Choose the level of significance $\alpha$ (e.g. $\alpha = 0.05$)
 * Select an appropriate test, based on assumptions about the properties of the underlying data (and grouping variables)
 * Calculate a test statistic $T$
 * Reject $H_0$ if $p(T) \leq \alpha$ or do not reject $H_0$ if $p(T) > \alpha$
-
-![](./Assets/random.png)
 
 
 ## Formulation of the hypothesis
@@ -64,7 +64,7 @@ A null hypothesis may be rejected, but it can never be accepted based on a singl
 
 # Overview of univariate tests
 
-<img src="https://github.com/kagruber2412/Marketing_Research/blob/master/Assets/Summary_Tests.png" width="700" height="350">
+<img src="https://github.com/kagruber2412/Marketing_Research/blob/master/Assets/Summary_Tests.png">
 
 
 # Nominal variables \& one sample
