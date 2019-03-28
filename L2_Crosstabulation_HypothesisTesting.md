@@ -61,13 +61,59 @@ A null hypothesis may be rejected, but it can never be accepted based on a singl
 
 **Usage:**
 
-* to compare a certain sample proportion of a **nominal** variable with an expected population proportion
+* To compare a certain sample proportion of a **nominal** variable with an expected population proportion.
 
-**Example**: *Do the number of individuals or objects that fall in each category differ from the number you would expect?*
-* **Case 1:** equal proportions
-* **Case 2:** $\chi^2$ test of independence
+### Case 1: Equal proportions
 
+* Tests the null hypothesis stating that the frequency distribution of certain events observed in a sample is consistent with a particular theoretical distribution.
 
+**Example:** *Trump's twitter behavior (cont.)*
 
+4901 words obtained from tweets based on Trump's **Android** phone (during the presidential election campaign in 2016) had been categorized into 10 sentiments using the NRC Word-Emotion Association lexicon.
 
+**Research question:** Is the sentiment of words equally distributed? or is there any sentiment that is overrepresented?
 
+* $H_0$: all sentiments (= categories) are equal (uniform distributed)
+* $H_1$: at least one sentiment differs (is more/less frequent)
+
+Under $H_0$ you would expect a proportion of $1/10$ for all categories -> $1/10 \times N = 1/10 \times 3197 = 319.7$ observations per category
+* We are testing the deviations of the `observed` values from the `expected` values.
+
+```
+# calculate absolute values (frequencies)
+observed <- table(dat)
+```
+
+```
+# compare it to the expected value for all categories being equally likely
+# i.e. the number of observations devided by the number of categories
+expected <- sum(table(dat))/10
+residuum <- observed - expected
+cbind(observed, expected, residuum)
+```
+
+```
+# calculate the test stastistic
+sum(residuum^2)/(expected)
+```
+
+```
+# plot chi-square distribution
+x <- rchisq(1000, 9)
+hist(x, prob=TRUE, main="Chi^2 distribution with 9 degrees of freedom", xlab="")
+curve(dchisq(x, df=9), col="red", lwd=2, add=TRUE )
+
+# the corresponding 95%-quantile 
+# (= for a significance level of 5%) we would be here
+abline(v=qchisq(1-0.05, 9), col="red", lty="dotted", lwd=2)
+# our test statistic is here 549.4091
+
+# calculate area under the chi-square distribution 
+# curve (= p-value)
+1 - pchisq(549.4091, 9)
+```
+
+```
+# fast: use built-in function:
+chisq.test(table(dat))
+```
