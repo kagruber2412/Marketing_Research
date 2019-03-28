@@ -25,24 +25,24 @@ order: 1
 
 ## Formulation of the hypothesis
 
-* A **null hypothesis ($H_0$)** is a statement of the status quo, one of no difference or no effect. If the null hypothesis is not rejected, no changes will be made.
-* An **alternative hypothesis ($H_1$)** is one in which some difference or effect is expected. Accepting the alternative hypothesis will lead to changes in opinions or actions (= **research question**).
+* A **null hypothesis (H<sub>0</sub>)** is a statement of the status quo, one of no difference or no effect. If the null hypothesis is not rejected, no changes will be made.
+* An **alternative hypothesis (H<sub>1</sub>)** is one in which some difference or effect is expected. Accepting the alternative hypothesis will lead to changes in opinions or actions (= **research question**).
 
 A null hypothesis may be rejected, but it can never be accepted based on a single test. The null hypothesis is formulated in such a way that its rejection leads to the acceptance of the desired conclusion.
 
 *Example:*
 
-* $H_0 = \bar{x}_{female} = \bar{x}_{male}$
-* $H_1 = \bar{x}_{female} \neq \bar{x}_{male}$
+* H<sub>0</sub> = \bar{x}_{female} = \bar{x}_{male}
+* H<sub>1</sub> = \bar{x}_{female} \neq \bar{x}_{male}
 
 <img src="https://github.com/kagruber2412/Marketing_Research/blob/master/Assets/hypothesis1.png" width="350" height="350">
 
 
 ## Choose significance level 
 
-* **Type I error** (significance level, $\alpha$): occurs when the sample results lead to the rejection of the null hypothesis when it is in fact true (common values: $0.05$ or $0.01$).
-* **Type II error** ($\beta$): occurs when, based on the sample results, the null hypothesis is not rejected when it is in fact false.
-* **Test power** ($1 - \beta$): the probability of rejecting the null hypothesis when it is false.
+* **Type I error** (significance level, &alpha;): occurs when the sample results lead to the rejection of the null hypothesis when it is in fact true (common values: 0.05 or 0.01).
+* **Type II error** (&beta;): occurs when, based on the sample results, the null hypothesis is not rejected when it is in fact false.
+* **Test power** (1 - &beta;): the probability of rejecting the null hypothesis when it is false.
 
 <img src="https://github.com/kagruber2412/Marketing_Research/blob/master/Assets/significance.png" width="350" height="350">
 
@@ -94,10 +94,10 @@ dat <- c(rep(name[1],490), rep(name[2],428), rep(name[3],304),rep(name[4],403), 
 
 **Research question:** Is the sentiment of words equally distributed? or is there any sentiment that is overrepresented?
 
-* $H_0$: all sentiments (= categories) are equal (uniform distributed)
-* $H_1$: at least one sentiment differs (is more/less frequent)
+* H<sub>0</sub>: all sentiments (= categories) are equal (uniform distributed)
+* H<sub>1</sub>: at least one sentiment differs (is more/less frequent)
 
-Under $H_0$ you would expect a proportion of $1/10$ for all categories -> $1/10 \times N = 1/10 \times 3197 = 319.7$ observations per category
+Under H<sub>0</sub> you would expect a proportion of 1/10 for all categories -> 1/10 * N = 1/10 \times 3197 = 319.7 observations per category
 * We are testing the deviations of the `observed` values from the `expected` values.
 
 ```
