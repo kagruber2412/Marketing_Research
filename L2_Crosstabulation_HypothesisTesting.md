@@ -71,6 +71,13 @@ A null hypothesis may be rejected, but it can never be accepted based on a singl
 
 4901 words obtained from tweets based on Trump's **Android** phone (during the presidential election campaign in 2016) had been categorized into 10 sentiments using the NRC Word-Emotion Association lexicon.
 
+```
+# generate the data
+name <- c("anger", "anticipation", "disgust", "fear","joy", "negative", "positive", "sadness","surprise", "trust")
+dat <- c(rep(name[1],490), rep(name[2],428), rep(name[3],304),rep(name[4],403), rep(name[5],355), rep(name[6],820),
+         rep(name[7],967), rep(name[8],450), rep(name[9],266),rep(name[10],626))
+```
+
 **Research question:** Is the sentiment of words equally distributed? or is there any sentiment that is overrepresented?
 
 * $H_0$: all sentiments (= categories) are equal (uniform distributed)
