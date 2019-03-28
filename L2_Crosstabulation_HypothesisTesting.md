@@ -124,3 +124,7 @@ abline(v=qchisq(1-0.05, 9), col="red", lty="dotted", lwd=2)
 # fast: use built-in function:
 chisq.test(table(dat))
 ```
+
+**Interpretation:**
+
+$H_0$} (i.e., the 10 sentiments are distributed uniformly) is **rejected** ($p < .001$). Words with a positve/negative classified sentiment are more frequent!
