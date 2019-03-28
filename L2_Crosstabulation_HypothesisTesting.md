@@ -38,9 +38,9 @@ A null hypothesis may be rejected, but it can never be accepted based on a singl
 <img src="https://github.com/kagruber2412/Marketing_Research/blob/master/Assets/hypothesis1.png" width="350" height="350">
 
 
-## Choose significance level 
+## Choose critical value
 
-* **Type I error** (significance level, &alpha;): occurs when the sample results lead to the rejection of the null hypothesis when it is in fact true (common values: 0.05 or 0.01).
+* **Type I error** (&alpha;): occurs when the sample results lead to the rejection of the null hypothesis when it is in fact true (common values: 0.05 or 0.01).
 * **Type II error** (&beta;): occurs when, based on the sample results, the null hypothesis is not rejected when it is in fact false.
 * **Test power** (1 - &beta;): the probability of rejecting the null hypothesis when it is false.
 
@@ -145,7 +145,7 @@ chisq.test(table(dat))
 
 **Interpretation:**
 
-$H_0$} (i.e., the 10 sentiments are distributed uniformly) is **rejected** ($p < .001$). Words with a positve/negative classified sentiment are more frequent!
+$H_0$}H<sub>0</sub> (i.e., the 10 sentiments are distributed uniformly) is **rejected** (p < .001). Words with a positve/negative classified sentiment are more frequent!
 
 
 ### Case 2: Test of independence
@@ -171,8 +171,8 @@ barplot(dat, col=c("steelblue","grey40"))
 
 **Research question:** Is there an association between content (w/o picture or link) of the tweet and the device used (Samsung Galaxy vs. iPhone)?
 
-* $H_0$: the device used (rows) is independent of the content (columns).
-* $H_1$: the device used is not independent of the content.
+* H<sub>0</sub>: the device used (rows) is independent of the content (columns).
+* H<sub>1</sub>: the device used is not independent of the content.
  
 
 ```
@@ -197,6 +197,6 @@ chisq.test(dat)
 
 **Interpretation:**
 
-$H_0$ is **rejected** ($p < .001$). Tweets from the iPhone are significantly more likely to contain either a picture or a link.
+H<sub>0</sub> is **rejected** (p < .001). Tweets from the iPhone are significantly more likely to contain either a picture or a link.
 
 <img src="https://github.com/kagruber2412/Marketing_Research/blob/master/Assets/solution.PNG">
