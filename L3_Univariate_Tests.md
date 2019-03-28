@@ -108,8 +108,8 @@ stripchart(weight ~ sex, vertical = TRUE, data = wdata, method = "jitter", jitte
 
 **Check Assumption 3: Homogeneity of variances.**
 
-* **$H_0$: both samples have equal variances**.
-* $H_1$ : the variances differ.
+* **H<sub>0</sub>: Both samples have equal variances**.
+* H<sub>1</sub>: The variances differ.
 
 ```
 mean. <- tapply(wdata$weight, wdata$group, mean)
@@ -124,8 +124,8 @@ bartlett.test(wdata$weight ~ wdata$group)
 
 **Conduct independent samples t-test.**
 
-* $H_0$: the means of both samples are equal (there is no difference between the means of the two samples)
-* $H_1$: the means of both samples differ
+* H<sub>0</sub>: The means of both samples are equal (there is no difference between the means of the two samples).
+* H<sub>1</sub>: The means of both samples differ.
 
 ```
 diff. <- mean.[1] - mean.[2]
@@ -157,7 +157,7 @@ t.test(wdata$weight ~ wdata$group, var.equal = TRUE)
 * Alternative (**nonparametric**) test, if assumption 2 (normal distribution within groups) and/or assumption 3 (equal variances) do **not** hold.
 * Compares the difference in the location (**mean ranks**) of **two independent samples**.
 * Has greater efficiency than the t-test on non-normal distributions.
-* Particularly suitable for small sample sizes ($n_1$, $n_2$ < 10).
+* Particularly suitable for small sample sizes (n<sub>1</sub>, n<sub>2</sub> < 10).
 
 
 **Example:** *skewed data, unequal variances*
