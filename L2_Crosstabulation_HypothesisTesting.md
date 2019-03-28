@@ -54,7 +54,7 @@ A null hypothesis may be rejected, but it can never be accepted based on a singl
 
 * The test statistic measures how close the sample is to the null hypothesis and follows a certain distribution (e.g. normal, t, $\chi^2$,...)
 
-<img src="https://github.com/kagruber2412/Marketing_Research/blob/master/Assets/hypothesis.png" width="350" height="350">
+<img src="https://github.com/kagruber2412/Marketing_Research/blob/master/Assets/hypothesis.png" width="700" height="350">
 
 
 ## Accept/Reject
