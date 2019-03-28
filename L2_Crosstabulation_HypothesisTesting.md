@@ -12,7 +12,9 @@ order: 1
 
 # Hypothesis testing
 
-![](./Assets/random.png)
+<p align="center">
+   <img src="https://github.com/kagruber2412/Marketing_Research/blob/master/Assets/random.png">         
+</p>
 
 * Formulate $H_0$ \& $H_1$
 * Choose the level of significance $\alpha$ (e.g. $\alpha = 0.05$)
