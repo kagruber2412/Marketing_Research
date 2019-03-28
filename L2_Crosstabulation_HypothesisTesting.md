@@ -16,7 +16,7 @@ order: 1
    <img src="https://github.com/kagruber2412/Marketing_Research/blob/master/Assets/random.png">         
 </p>
 
-* Formulate $H_0$ \& $H_1$
+* Formulate H<sub>&0 \& H<sub>&1
 * Choose the level of significance $\alpha$ (e.g. $\alpha = 0.05$)
 * Select an appropriate test, based on assumptions about the properties of the underlying data (and grouping variables)
 * Calculate a test statistic $T$
