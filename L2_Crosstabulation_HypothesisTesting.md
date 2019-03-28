@@ -64,7 +64,7 @@ A null hypothesis may be rejected, but it can never be accepted based on a singl
 
 # Overview of univariate tests
 
-<img src="https://github.com/kagruber2412/Marketing_Research/blob/master/Assets/Summary_Tests.png" width="350" height="350">
+<img src="https://github.com/kagruber2412/Marketing_Research/blob/master/Assets/Summary_Tests.png" width="350" height="700">
 
 
 # Nominal variables \& one sample
@@ -141,6 +141,8 @@ chisq.test(table(dat))
 
 $H_0$} (i.e., the 10 sentiments are distributed uniformly) is **rejected** ($p < .001$). Words with a positve/negative classified sentiment are more frequent!
 
+<img src="https://github.com/kagruber2412/Marketing_Research/blob/master/Assets/chi1b.png" width="350" height="350">
+
 
 ### Case 2: Test of independence
 
@@ -192,3 +194,5 @@ chisq.test(dat)
 **Interpretation:**
 
 $H_0$ is **rejected** ($p < .001$). Tweets from the iPhone are significantly more likely to contain either a picture or a link.
+
+<img src="https://github.com/kagruber2412/Marketing_Research/blob/master/Assets/solution.PNG" width="350" height="350">
