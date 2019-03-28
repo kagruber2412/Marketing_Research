@@ -128,3 +128,55 @@ chisq.test(table(dat))
 **Interpretation:**
 
 $H_0$} (i.e., the 10 sentiments are distributed uniformly) is **rejected** ($p < .001$). Words with a positve/negative classified sentiment are more frequent!
+
+
+### Case 2: Test of independence
+
+* Examines the relationship between two independent, nominal variables.
+* **independence**: the occurrence of one does not affect the probability of the other (= no additional information about one variable can be extracted from the other). Examples: tossing a coin, measuring peoples height,...
+
+**Example:** *Trump's twitter behaviour (cont.)*
+
+Overall, we have 628 tweets from the iPhone, and 762 tweets from the Android. We can also see a difference involves sharing links or pictures in tweets.
+
+```
+dat <- matrix(c(10,543,423,199), ncol=2, byrow=T)
+rownames(dat) <- c("Android","iPhone")
+colnames(dat) <- c("picture/link","No picture/link")
+dat
+
+# make a staked barplot
+barplot(dat, col=c("steelblue","grey40"))
+
+# Obviously tweets from the iPhone are more likely to contain either a picture or a link.
+```
+
+**Research question:** Is there an association between content (w/o picture or link) of the tweet and the device used (Samsung Galaxy vs. iPhone)?
+
+* $H_0$: the device used (rows) is independent of the content (columns).
+* $H_1$: the device used is not independent of the content.
+ 
+
+```
+# add information (row and column sums)
+addmargins(dat)
+
+# to get conditional information devide either by row or by column sums
+
+# condition on column information:
+prop.table(dat, 2)*100 
+
+# make a staked barplot again (using conditional information)
+barplot(prop.table(dat, 2)*100, col=c("steelblue","grey40"))
+
+# we have no space for a legend, so we force the bars to be side by side
+barplot(prop.table(dat, 2)*100, col=c("steelblue","grey40"), beside=TRUE, legend=TRUE)
+```
+
+```
+chisq.test(dat)
+```
+
+**Interpretation:**
+
+$H_0$ is **rejected** ($p < .001$). Tweets from the iPhone are significantly more likely to contain either a picture or a link.
