@@ -24,7 +24,7 @@ order: 1
 * Judges the difference between two group means relative to their variability:
 
 <p align="center">
-   <img src="https://github.com/kagruber2412/Marketing_Research/blob/master/Assets/Ttest1.png">         
+   <img src="https://github.com/kagruber2412/Marketing_Research/blob/master/Assets/Ttest1.png" width="450" height="700">         
 </p>
 
 &rarr; small differences + loads of variability: **hard to detect**
