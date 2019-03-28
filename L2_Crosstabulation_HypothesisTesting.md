@@ -97,18 +97,22 @@ dat <- c(rep(name[1],490), rep(name[2],428), rep(name[3],304),rep(name[4],403), 
 * H<sub>0</sub>: all sentiments (= categories) are equal (uniform distributed)
 * H<sub>1</sub>: at least one sentiment differs (is more/less frequent)
 
-Under H<sub>0</sub> you would expect a proportion of 1/10 for all categories -> 1/10 * N = 1/10 \times 3197 = 319.7 observations per category
-* We are testing the deviations of the `observed` values from the `expected` values.
+We are testing the deviations of the `observed` values from the `expected` values.
 
 ```
 # calculate absolute values (frequencies)
 observed <- table(dat)
 ```
 
+Under H<sub>0</sub> you would expect a proportion of 1/10 for all categories -> 1/10 * N = 1/10 * 3197 = 319.7 observations per category.
+
 ```
-# compare it to the expected value for all categories being equally likely
-# i.e. the number of observations devided by the number of categories
+# devide the number of observations by the number of categories (i.e., all categories being equally likely)
 expected <- sum(table(dat))/10
+```
+
+```
+# compare the observed to the expected value
 residuum <- observed - expected
 cbind(observed, expected, residuum)
 ```
@@ -133,8 +137,6 @@ abline(v=qchisq(1-0.05, 9), col="red", lty="dotted", lwd=2)
 # curve (= p-value)
 1 - pchisq(549.4091, 9)
 ```
-
-<img src="https://github.com/kagruber2412/Marketing_Research/blob/master/Assets/chi1b.png" width="350" height="350">
 
 ```
 # fast: use built-in function:
