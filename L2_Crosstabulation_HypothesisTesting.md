@@ -18,7 +18,7 @@ order: 1
 * Calculate a test statistic $T$
 * Reject $H_0$ if $p(T) \leq \alpha$ or do not reject $H_0$ if $p(T) > \alpha$
 
-![](./Assets/random.png&s=50)
+![](./Assets/random.png)
 
 
 ## Formulation of the hypothesis
@@ -34,6 +34,7 @@ A null hypothesis may be rejected, but it can never be accepted based on a singl
 * $H_1 = \bar{x}_{female} \neq \bar{x}_{male}$
 
 ![](./Assets/hypothesis1.png)
+<img src="https://your-image-url.type" width="100" height="100">
 
 
 ## Choose significance level 
