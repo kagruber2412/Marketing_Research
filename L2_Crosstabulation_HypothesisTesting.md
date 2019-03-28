@@ -18,6 +18,7 @@ order: 1
 * Calculate a test statistic $T$
 * Reject $H_0$ if $p(T) \leq \alpha$ or do not reject $H_0$ if $p(T) > \alpha$
 
+![](./Assets/random.png)
 
 ## Formulation of the hypothesis
 
@@ -31,12 +32,16 @@ A null hypothesis may be rejected, but it can never be accepted based on a singl
 * $H_0 = \bar{x}_{female} = \bar{x}_{male}$
 * $H_1 = \bar{x}_{female} \neq \bar{x}_{male}$
 
+![](./Assets/hypothesis1.png)
+
 
 ## Choose significance level 
 
 * **Type I error** (significance level, $\alpha$): occurs when the sample results lead to the rejection of the null hypothesis when it is in fact true (common values: $0.05$ or $0.01$).
 * **Type II error** ($\beta$): occurs when, based on the sample results, the null hypothesis is not rejected when it is in fact false.
 * **Test power** ($1 - \beta$): the probability of rejecting the null hypothesis when it is false.
+
+![](./Assets/significance.png)
 
 
 ## Test selection
@@ -48,8 +53,13 @@ A null hypothesis may be rejected, but it can never be accepted based on a singl
 
 * The test statistic measures how close the sample is to the null hypothesis and follows a certain distribution (e.g. normal, t, $\chi^2$,...)
 
+![](./Assets/hypothesis.png)
+
 
 ## Accept/Reject
+
+![](./Assets/hypothesis2.png)
+![](./Assets/hypothesis3.png)
 
 
 # Overview of univariate tests
