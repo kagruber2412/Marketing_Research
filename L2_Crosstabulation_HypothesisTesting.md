@@ -59,8 +59,7 @@ A null hypothesis may be rejected, but it can never be accepted based on a singl
 
 ## Accept/Reject
 
-<img src="https://github.com/kagruber2412/Marketing_Research/blob/master/Assets/hypothesis2.png" width="350" height="350">
-<img src="https://github.com/kagruber2412/Marketing_Research/blob/master/Assets/hypothesis3.png" width="350" height="350">
+<img src="https://github.com/kagruber2412/Marketing_Research/blob/master/Assets/hypothesis2.png" width="350" height="350"> <img src="https://github.com/kagruber2412/Marketing_Research/blob/master/Assets/hypothesis3.png" width="350" height="350">
 
 
 # Overview of univariate tests
