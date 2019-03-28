@@ -84,19 +84,18 @@ order: 1
 
 **Research question example 1:** What were the most common words in Trump's tweeds?
 
-![](./Assets/Trump_Tweets.PNG)
+<p align="center">
+   <img src="https://github.com/kagruber2412/Marketing_Research/blob/master/Assets/Trump_Tweets.PNG">         
+</p>
+
 
 **Research question example 2:** How is the word sentiment of tweets distributed?
 
 ```
 # generate the data
-name <- c("anger", "anticipation", "disgust", "fear",
-            "joy", "negative", "positive", "sadness",
-            "surprise", "trust")
-dat <- c(rep(name[1],490), rep(name[2],428), rep(name[3],304),
-         rep(name[4],403), rep(name[5],355), rep(name[6],820),
-         rep(name[7],967), rep(name[8],450), rep(name[9],266),
-         rep(name[10],626))
+name <- c("anger", "anticipation", "disgust", "fear","joy", "negative", "positive", "sadness","surprise", "trust")
+dat <- c(rep(name[1],490), rep(name[2],428), rep(name[3],304),rep(name[4],403), rep(name[5],355), rep(name[6],820),
+         rep(name[7],967), rep(name[8],450), rep(name[9],266),rep(name[10],626))
 ```
 ```
 # inspect data
@@ -110,23 +109,13 @@ table(dat)
 **relative values**
 
 ```
-> table(dat)/sum(table(dat))
-
-       anger anticipation      disgust         fear          joy
-  0.09590918   0.08377373   0.05950284   0.07888041   0.06948522
-    negative     positive      sadness     surprise        trust
-  0.16050108   0.18927383   0.08807986   0.05206498   0.12252887
+table(dat)/sum(table(dat))
 ```
 
 **percentages**
 
 ```
 table(dat)/sum(table(dat))*100
-
-       anger anticipation      disgust         fear          joy
-    9.590918     8.377373     5.950284     7.888041     6.948522
-    negative     positive      sadness     surprise        trust
-   16.050108    18.927383     8.807986     5.206498    12.252887
 ```
 
 **total number of observations**
@@ -134,8 +123,8 @@ table(dat)/sum(table(dat))*100
 ```
 length(dat)
 
-# gives the same result (but taking NAs into account)
 sum(table(dat))
+# gives the same result (but taking NAs into account)
 ```
 
 
@@ -148,7 +137,9 @@ sum(table(dat))
 
 What can this mean?
 
-![](./Assets/pie.jpg)
+<p align="center">
+   <img src="https://github.com/kagruber2412/Marketing_Research/blob/master/Assets/pie.jpg">         
+</p>
 
 
 ```
@@ -168,9 +159,11 @@ barplot(table(dat)/sum(table(dat))*100, col="grey40", border=NA)
 barplot(table(dat)/sum(table(dat))*100, col="grey40", border=NA, las=3)
 ```
 
-![](./Assets/p3_R.png)
+<p align="center">
+   <img src="https://github.com/kagruber2412/Marketing_Research/blob/master/Assets/p3_R.png">         
+</p>
 
-**Hint** list of possible (named) colors available:
+**Hint**, list of possible (named) colors available:
 
 ```
 colors()
