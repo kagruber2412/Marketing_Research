@@ -7,7 +7,7 @@ order: 1
 
 # Contents
 
-* Conduct $\chi^2$ analyses and tests.
+* Conduct &chi;<sup>2</sup> analyses and tests.
 * Understand how to use cross tables in practice and be able to interpret the results of different associated statistics.
 
 # Hypothesis testing
@@ -54,7 +54,7 @@ A null hypothesis may be rejected, but it can never be accepted based on a singl
 - **independent** samples (two or more group comparisons on different observation units, also called *unpaired*) or 
 **related** samples (two or more measurement points on the same observation units, also called *paired*)
 
-* The test statistic measures how close the sample is to the null hypothesis and follows a certain distribution (e.g. normal, t, $\chi^2$,...)
+* The test statistic measures how close the sample is to the null hypothesis and follows a certain distribution (e.g. normal, t, &chi;<sup>2</sup>,...)
 
 <img src="https://github.com/kagruber2412/Marketing_Research/blob/master/Assets/hypothesis.png" width="700" height="350">
 
@@ -71,7 +71,7 @@ A null hypothesis may be rejected, but it can never be accepted based on a singl
 
 # Nominal variables \& one sample
 
-## $chi^2$ test
+## &chi;<sup>2</sup> test
 
 **Usage:**
 
