@@ -18,7 +18,7 @@ order: 1
 * Calculate a test statistic $T$
 * Reject $H_0$ if $p(T) \leq \alpha$ or do not reject $H_0$ if $p(T) > \alpha$
 
-![](./Assets/random.png | width=100)
+![](./Assets/random.png&s=200)
 
 
 ## Formulation of the hypothesis
