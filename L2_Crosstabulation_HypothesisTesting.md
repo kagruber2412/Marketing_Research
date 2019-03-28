@@ -132,6 +132,8 @@ abline(v=qchisq(1-0.05, 9), col="red", lty="dotted", lwd=2)
 1 - pchisq(549.4091, 9)
 ```
 
+<img src="https://github.com/kagruber2412/Marketing_Research/blob/master/Assets/chi1b.png" width="350" height="350">
+
 ```
 # fast: use built-in function:
 chisq.test(table(dat))
@@ -140,8 +142,6 @@ chisq.test(table(dat))
 **Interpretation:**
 
 $H_0$} (i.e., the 10 sentiments are distributed uniformly) is **rejected** ($p < .001$). Words with a positve/negative classified sentiment are more frequent!
-
-<img src="https://github.com/kagruber2412/Marketing_Research/blob/master/Assets/chi1b.png" width="350" height="350">
 
 
 ### Case 2: Test of independence
@@ -195,4 +195,4 @@ chisq.test(dat)
 
 $H_0$ is **rejected** ($p < .001$). Tweets from the iPhone are significantly more likely to contain either a picture or a link.
 
-<img src="https://github.com/kagruber2412/Marketing_Research/blob/master/Assets/solution.PNG" width="350" height="350">
+<img src="https://github.com/kagruber2412/Marketing_Research/blob/master/Assets/solution.PNG" width="700" height="350">
