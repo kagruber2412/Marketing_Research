@@ -23,11 +23,13 @@ order: 1
 
 * Judges the difference between two group means relative to their variability:
 
-![](./Assets/Ttest1.png)
+<p align="center">
+   <img src="https://github.com/kagruber2412/Marketing_Research/blob/master/Assets/Ttest1.png">         
+</p>
 
--> small differences + loads of variability: **hard to detect**
+&rarr; small differences + loads of variability: **hard to detect**
 
--> large differences + low variability: **easy to detect**
+&rarr; large differences + low variability: **easy to detect**
 
 
 ### Assumptions
@@ -79,7 +81,9 @@ legend("topleft", legend=c("female","male"), fill=c("purple","steelblue"), borde
 * The bottom and top of the box are always the first (25th) and third (75th) percentile, the band inside the box is always the second (50th) percentile (the median).
 * The whiskers are represented as the extend of $1.5$ times the difference between the 25th and the 75th percentile.
 
-![](./Assets/Boxplot.png)
+<p align="center">
+   <img src="https://github.com/kagruber2412/Marketing_Research/blob/master/Assets/Boxplot.png" width="350" height="350">         
+</p>
 
 
 ```
