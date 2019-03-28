@@ -27,7 +27,7 @@ order: 1
 
 * **Nominal scale:** categories or qualitative classifications
   
-  possible mathematical operations: `=`, `&ne;
+  possible mathematical operations: =, &ne;
   
   e.g.: male, female
   
@@ -36,7 +36,7 @@ order: 1
 
 * **Ordinal scale:** sorted categories
   
-  possible mathematical operations: `>`,`<`,`&ge;`,`&le;`
+  possible mathematical operations: >,<,&ge;,&le;
   
   e.g.: **likert scale**: completely agree, mostly agree, mostly disagree, completely disagree (subclass of **rating scale**, sometimes treated as "pseudo-meteric")
   
@@ -47,13 +47,13 @@ order: 1
 
 * **Interval scale:** scales with an arbitrary defined zero point
   
-  possible mathematical operations: `+`,`-`
+  possible mathematical operations: +,-
   
   e.g.: celsius scale, direction (measured in degrees from true or magnetic north), also sometimes rating scales (attitude and opinion scales)
   
 * **Ratio scale:** possesses a meaningful zero value, most measurement in the physical sciences and engineering is done on ratio scales
 
-  possible mathematical operations: `*`,`&divide;`
+  possible mathematical operations: &lowast;, &divide;
   
   e.g.: kelvin scale, age, income, price, costs, sales revenue, sales volume, market share, ...
   
