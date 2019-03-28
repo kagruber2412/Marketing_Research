@@ -33,8 +33,7 @@ A null hypothesis may be rejected, but it can never be accepted based on a singl
 * $H_0 = \bar{x}_{female} = \bar{x}_{male}$
 * $H_1 = \bar{x}_{female} \neq \bar{x}_{male}$
 
-![](./Assets/hypothesis1.png)
-<img src="https://github.com/kagruber2412/Marketing_Research/blob/master/Assets/hypothesis1.png" width="100" height="100">
+<img src="https://github.com/kagruber2412/Marketing_Research/blob/master/Assets/hypothesis1.png" width="200" height="200">
 
 
 ## Choose significance level 
