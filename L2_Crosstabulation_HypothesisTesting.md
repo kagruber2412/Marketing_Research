@@ -32,8 +32,8 @@ A null hypothesis may be rejected, but it can never be accepted based on a singl
 
 *Example:*
 
-* H<sub>0</sub> = mean<sub>female</sub> = mean<sub>male</sub>
-* H<sub>1</sub> = mean<sub>female</sub> &ne; mean<sub>male</sub>
+* H<sub>0</sub> = mean<sub>(female)</sub> = mean<sub>(male)</sub>
+* H<sub>1</sub> = mean<sub>(female)</sub> &ne; mean<sub>(male)</sub>
 
 <img src="https://github.com/kagruber2412/Marketing_Research/blob/master/Assets/hypothesis1.png" width="350" height="350">
 
@@ -145,7 +145,7 @@ chisq.test(table(dat))
 
 **Interpretation:**
 
-$H_0$}H<sub>0</sub> (i.e., the 10 sentiments are distributed uniformly) is **rejected** (p < .001). Words with a positve/negative classified sentiment are more frequent!
+H<sub>0</sub> (i.e., the 10 sentiments are distributed uniformly) is **rejected** (p < .001). Words with a positve/negative classified sentiment are more frequent!
 
 
 ### Case 2: Test of independence
