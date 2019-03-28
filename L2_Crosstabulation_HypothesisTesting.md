@@ -64,6 +64,8 @@ A null hypothesis may be rejected, but it can never be accepted based on a singl
 
 # Overview of univariate tests
 
+<img src="https://github.com/kagruber2412/Marketing_Research/blob/master/Assets/Summary_Tests.png" width="350" height="350">
+
 
 # Nominal variables \& one sample
 
