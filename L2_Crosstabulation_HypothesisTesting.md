@@ -16,10 +16,10 @@ order: 1
    <img src="https://github.com/kagruber2412/Marketing_Research/blob/master/Assets/random.png">         
 </p>
 
-* Formulate H<sub>&0 \& H<sub>&1
+* Formulate H<sub>&0;</sub> \& H<sub>&1;</sub>
 * Choose the level of significance $\alpha$ (e.g. $\alpha = 0.05$)
 * Select an appropriate test, based on assumptions about the properties of the underlying data (and grouping variables)
-* Calculate a test statistic $T$
+* Calculate a test statistic T
 * Reject $H_0$ if $p(T) \leq \alpha$ or do not reject $H_0$ if $p(T) > \alpha$
 
 
