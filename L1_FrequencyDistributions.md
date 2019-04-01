@@ -229,7 +229,7 @@ bar
   
 * **Mode** (most frequent value):
   
-  e.g.: $ mode = 9$ (appears 3 times)
+  e.g.: mode = 9 (appears 3 times)
 
 * **Median** $\tilde{x}$ (value in the middle):
 
@@ -237,21 +237,21 @@ bar
   
  ### Measures of dispersion
  
-* **variance** $s^2$ (mean squared deviation of the mean):
+* **variance** s<sup>2</sup> (mean squared deviation of the mean):
 
   $$s^2 = \frac{1}{n-1} \sum_{i=1}^{n} (x_i - \bar{x})^2$$
 
   e.g.: $((7 - 10.3)^2 + (10 - 10.3)^2 + \ldots + (9 - 10.3)^2)/(10-1) = 7.1222$
 
-* **standard deviation** $s$ (square root of the variance):
+* **standard deviation** s (square root of the variance):
 
   e.g.: $s = \sqrt{7.1222} = 2.6687$\\
 
-* **range** (spread of the data): $max - min$
+* **range** (spread of the data): max - min
 
-  e.g.: $16 - 7 = 9$
+  e.g.: 16 - 7 = 9
 
-* **interquartile distance** $QD$ (difference between 25th and 75th percentile):
+* **interquartile distance** QD (difference between 25th and 75th percentile):
 
   QD = Q_3 - Q_1
 
@@ -267,7 +267,7 @@ wdata <- data.frame(female=female, male=male)
 # inspect the data
 head(wdata)
 
-# summary statistics for the two variables
+# summary statistics for males and females
 summary(wdata)
 ```
 
@@ -281,8 +281,16 @@ summary(wdata)
 ```
 var(wdata$female)
 
+sqrt(var(wdata$female))
+
+# or alternatively
 sd(wdata$female)
 
+min(wdata$female)
+
+max(wdata$female)
+
+# or alternatively
 range(wdata$female)
 
 median(wdata$female)
@@ -296,8 +304,13 @@ mean(wdata$female)
 
 * To display the distribution of a **continuous** variable by a number of **created** groups (continuous = here: nearly all observations have a different value).
 
+### Standard graphs
+
 ```
 # make a histogramm of the female weight
+hist(wdata$female)
+
+# change the title
 hist(wdata$female, main="Female weight")
 
 # change the color
@@ -312,7 +325,29 @@ x <- wdata$female
 curve(dnorm(x, mean(x), sd(x)), col = "red", lwd = 4, add = TRUE)
 ```
 
-![](./Assets/p5_R.png)
+<p align="center">
+   <img src="https://github.com/kagruber2412/Marketing_Research/blob/master/Assets/p5_R.png">         
+</p>
+
+
+### ggplot
+
+```
+# make a histogramm of the female weight
+histogramm <- ggplot(wdata, aes(x=female)) + geom_histogram()
+histogramm
+
+# change axis labels and title
+histogramm <- histogramm + xlab("") + ylab("") + ggtitle("Female weight")
+histogramm
+
+# add the normal distribution curve to the histogramm (use density instead of frequency)
+ggplot(wdata, aes(x=female)) + 
+              geom_histogram(aes(y =..density..)) + 
+              stat_function(fun = dnorm, args = list(mean = mean(wdata$female), sd = sd(wdata$female)), color = "red", size = 1) +
+              xlab("") + ylab("") + ggtitle("Female weight")
+```
+
 
 ## Summary descriptive statistics
 
