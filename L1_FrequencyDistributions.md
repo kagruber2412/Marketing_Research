@@ -87,7 +87,7 @@ Different descriptives for nominal/ordinal (**discrete**) and metric (**continuo
 **Research question 1:** What were the most common words in Trump's tweeds?
 
 <p align="center">
-   <img src="https://github.com/kagruber2412/Marketing_Research/blob/master/Assets/Trump_Tweets.PNG">         
+   <img src="https://github.com/kagruber2412/Marketing_Research/blob/master/Assets/Trump_Tweets.PNG" width="400" height="400">         
 </p>
 
 
@@ -168,7 +168,7 @@ barplot(prop.table(table(dat))*100, col="grey40", border=NA, las=3)
 ```
 
 <p align="center">
-   <img src="https://github.com/kagruber2412/Marketing_Research/blob/master/Assets/p3_R.png" width="350" height="350">         
+   <img src="https://github.com/kagruber2412/Marketing_Research/blob/master/Assets/p3_R.png" width="400" height="400">         
 </p>
 
 **Hint**, list of possible (named) colors available:
@@ -326,7 +326,7 @@ curve(dnorm(x, mean(x), sd(x)), col = "red", lwd = 4, add = TRUE)
 ```
 
 <p align="center">
-   <img src="https://github.com/kagruber2412/Marketing_Research/blob/master/Assets/p5_R.png" width="350" height="350">         
+   <img src="https://github.com/kagruber2412/Marketing_Research/blob/master/Assets/p5_R.png" width="400" height="400">         
 </p>
 
 
