@@ -168,7 +168,7 @@ barplot(prop.table(table(dat))*100, col="grey40", border=NA, las=3)
 ```
 
 <p align="center">
-   <img src="https://github.com/kagruber2412/Marketing_Research/blob/master/Assets/p3_R.png">         
+   <img src="https://github.com/kagruber2412/Marketing_Research/blob/master/Assets/p3_R.png" width="350" height="350">         
 </p>
 
 **Hint**, list of possible (named) colors available:
@@ -326,7 +326,7 @@ curve(dnorm(x, mean(x), sd(x)), col = "red", lwd = 4, add = TRUE)
 ```
 
 <p align="center">
-   <img src="https://github.com/kagruber2412/Marketing_Research/blob/master/Assets/p5_R.png">         
+   <img src="https://github.com/kagruber2412/Marketing_Research/blob/master/Assets/p5_R.png" width="350" height="350">         
 </p>
 
 
