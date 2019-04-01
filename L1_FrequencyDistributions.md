@@ -20,8 +20,10 @@ order: 1
 * To obtain an initial idea of the dataset.
 * To perform data cleaning.
 * To determine the most important characteristics of different variables in a dataset.
-* Different for nominal/ordinal (discrete) and metric (continuous) data = **levels of measurement**.
 
+<hr>
+
+Different for nominal/ordinal (discrete) and metric (continuous) data = **levels of measurement**.
 
 ### Discrete data
 
