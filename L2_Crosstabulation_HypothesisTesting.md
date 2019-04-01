@@ -42,7 +42,7 @@ A null hypothesis may be rejected, but it can never be accepted based on a singl
 ## 2. Choose the critical value &alpha;
 
 * **Type I error** (**&alpha;**): occurs when the sample results lead to the rejection of the null hypothesis when it is in fact true (common values: 0.05 or 0.01).
-* **Type II error** (**&beta;**): wrongly not rejecting H<sub>0</sub> based on the sample results (when it in fact H<sub>1</sub> is true).
+* **Type II error** (**&beta;**): wrongly not rejecting H<sub>0</sub> based on the sample results (in fact H<sub>1</sub> is true in the underlying population).
 * **Test power** (**1 - &beta;**): the probability of correctly rejecting the null hypothesis.
 
 <p align="center">
