@@ -23,7 +23,7 @@ order: 1
 
 <hr>
 
-Different for nominal/ordinal (discrete) and metric (continuous) data = **levels of measurement**.
+Different descriptives for nominal/ordinal (*discrete*) and metric (*continuous*) data.
 
 ### Discrete data
 
@@ -40,7 +40,7 @@ Different for nominal/ordinal (discrete) and metric (continuous) data = **levels
   
   possible mathematical operations: >,<,&ge;,&le;
   
-  e.g.: **likert scale**: completely agree, mostly agree, mostly disagree, completely disagree (subclass of **rating scale**, sometimes treated as "pseudo-meteric")
+  e.g.: **likert scale**: completely agree, mostly agree, mostly disagree, completely disagree (subclass of **rating scale**, sometimes treated as *pseudo-meteric*)
   
   **`R`** data type: factor, numeric (integer)
 
@@ -68,10 +68,10 @@ Different for nominal/ordinal (discrete) and metric (continuous) data = **levels
 
 **Usage:**
 
-* To obtain a count of the number of responses associated with different values of **one** variable.
+* To obtain a count of the number of responses associated with different values of one or more variables.
 * To indicate how scores of respondents are distributed over meaningful categories.
 
-**Possible research questions for frequency tables**
+**Possible research questions for frequency tables of a single variable**
 
 * What is the range of response values?
 * What is the distribution of the responses? (e.g. highest? lowest?)
@@ -100,33 +100,37 @@ dat <- c(rep(name[1],490), rep(name[2],428), rep(name[3],304),rep(name[4],403), 
          rep(name[7],967), rep(name[8],450), rep(name[9],266),rep(name[10],626))
 ```
 ```
-# inspect data
+# inspect the data
 head(dat)
 ```
 ```
 # obtain a frequency table
 table(dat)
 ```
+```
+# obtain the total number of observations
+length(dat)
+
+sum(table(dat))
+# gives the same result (but taking NAs into account)
+```
 
 **relative values**
 
 ```
 table(dat)/sum(table(dat))
+
+# or alternatively use
+prop.table(table(dat))
 ```
 
 **percentages**
 
 ```
 table(dat)/sum(table(dat))*100
-```
 
-**total number of observations**
-
-```
-length(dat)
-
-sum(table(dat))
-# gives the same result (but taking NAs into account)
+# or alternatively use
+prop.table(table(dat))*100
 ```
 
 
@@ -144,21 +148,23 @@ What can this mean?
 </p>
 
 
+### Standard bar graph
+
 ```
 # frequencies
 barplot(table(dat))
 
 # percentages
-barplot(table(dat)/sum(table(dat))*100)
+barplot(prop.table(table(dat))*100)
 
 # change the colors
-barplot(table(dat)/sum(table(dat))*100, col="grey40")
+barplot(prop.table(table(dat))*100, col="grey40")
 
 # delete the box borders
-barplot(table(dat)/sum(table(dat))*100, col="grey40", border=NA)
+barplot(prop.table(table(dat))*100, col="grey40", border=NA)
 
 # rotate the bar labels
-barplot(table(dat)/sum(table(dat))*100, col="grey40", border=NA, las=3)
+barplot(prop.table(table(dat))*100, col="grey40", border=NA, las=3)
 ```
 
 <p align="center">
@@ -175,6 +181,8 @@ For more annotations try:
 ``` 
 ?barplot
 ```
+
+### ggplot bar graph
 
 
 # Continuous variables
