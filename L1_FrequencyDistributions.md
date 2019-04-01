@@ -238,7 +238,7 @@ bar
 
 * **standard deviation** s (square root of the variance):
 
-  e.g.: $s = \sqrt{7.1222} = 2.6687$\\
+  e.g.: s = &radic;7.1222 = 2.6687
 
 * **range** (spread of the data): max - min
 
@@ -355,5 +355,5 @@ ggplot(wdata, aes(x=female)) +
 
 ![](./Assets/Summary_Table.png)
 
-**Note:** $\bar{x}$ and $s^2$ are only meaningful if the data is **symmetrically** distributed and **single peaked**!
+**Note:** $\bar{x}$ and s<sup>2</sup> are only meaningful if the data is **symmetrically** distributed and **single peaked**!
 
