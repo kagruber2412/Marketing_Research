@@ -17,13 +17,13 @@ order: 1
 </p>
 
 1. Formulate H<sub>0</sub> \& H<sub>1</sub>
-2. Choose the level of significance &alpha; (e.g. &alpha; = 0.05)
+2. Choose the critical value &alpha; (e.g. &alpha; = 0.05)
 3. Select an appropriate test, based on assumptions about the properties of the underlying data (and grouping variables)
 4. Calculate a test statistic T
 5. Reject H<sub>0</sub> if p(T) &le; &alpha; or do not reject H<sub>0</sub> if p(T) > &alpha;
 
 
-## 1. Formulate the hypothesis
+## 1. Formulate H<sub>0</sub> \& H<sub>1</sub>
 
 * A **null hypothesis (H<sub>0</sub>)** is a statement of the status quo, one of no difference or no effect. If the null hypothesis is not rejected, no changes will be made.
 * An **alternative hypothesis (H<sub>1</sub>)** is one in which some difference or effect is expected. Accepting the alternative hypothesis will lead to changes in opinions or actions (= **research question**).
@@ -39,11 +39,11 @@ A null hypothesis may be rejected, but it can never be accepted based on a singl
 <img src="https://github.com/kagruber2412/Marketing_Research/blob/master/Assets/hypothesis1.png" width="350" height="350">
 </p>
 
-## 2. Choose the critical value
+## 2. Choose the critical value &alpha;
 
 * **Type I error** (**&alpha;**): occurs when the sample results lead to the rejection of the null hypothesis when it is in fact true (common values: 0.05 or 0.01).
-* **Type II error** (**&beta;**): occurs when, based on the sample results, the null hypothesis is not rejected when it is in fact false.
-* **Test power** (**1 - &beta;**): the probability of rejecting the null hypothesis when it is false.
+* **Type II error** (**&beta;**): wrongly not rejecting H<sub>0</sub> based on the sample results (when it in fact H<sub>1</sub> is true).
+* **Test power** (**1 - &beta;**): the probability of correctly rejecting the null hypothesis.
 
 <p align="center">
 <img src="https://github.com/kagruber2412/Marketing_Research/blob/master/Assets/significance.png" width="350" height="350">
