@@ -52,8 +52,8 @@ A null hypothesis may be rejected, but it can never be accepted based on a singl
 ## Test selection
 
 * Select the appropriate test based on the measurement level of the variable being tested and test specific assumptions:
-- measurement level of the variables (nominal, ordinal, interval/ratio)
-- **independent** samples (two or more group comparisons on different observation units, also called *unpaired*) or 
+1. measurement level of the variables (nominal, ordinal, interval/ratio)
+2. **independent** samples (two or more group comparisons on different observation units, also called *unpaired*) or 
 **related** samples (two or more measurement points on the same observation units, also called *paired*)
 
 * The test statistic measures how close the sample is to the null hypothesis and follows a certain distribution (e.g. normal, t, &chi;<sup>2</sup>,...)
