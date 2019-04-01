@@ -5,7 +5,7 @@ category: getting-started
 order: 1
 ---
 
-#  Contents
+#  Objectives
 
 * Be able to identify situations where it is useful to test hypothesis related to differences as well as to understand the differences in use of parametric and nonparametric tests.
 * Be able to conduct analysis of variance and know how to interpret the results.
@@ -19,9 +19,9 @@ order: 1
 
 ## Student t-test for independent sample means
 
-* Examines if there is a **difference in means** between **two independent groups** (= observations are drawn from different populations, e.g. males and females, buyers and non-buyers, ...).
+* Examines if there is a **difference** between **two independent groups** (= observations are drawn from different populations, e.g. males and females, buyers and non-buyers, ...).
 
-* Judges the difference between two group means relative to their variability:
+* Judges the difference between **two group means** relative to their variability:
 
 <p align="center">
    <img src="https://github.com/kagruber2412/Marketing_Research/blob/master/Assets/Ttest1.png" width="450" height="450">         
@@ -34,9 +34,9 @@ order: 1
 
 ### Assumptions
 
-* Interval scaled variables and two independent samples
-* Normal distributed data in each group (two sample means)
-* Equal group variances (one pooled variance)
+* Interval scaled variables and two independent samples.
+* Normal distributed data in each group (two sample means).
+* Equal group variances (one pooled variance).
 
 
 **Example:** *human weight data*
@@ -59,7 +59,7 @@ sd. <-  tapply(wdata$weight, wdata$group, sd)
 rbind(mean., sd.)
 ```
 
-**Check assumption 2: Normal distribution within both groups.**
+**Assumption 2: Normal distributed data in each group.**
 
 ```
 # a more advanced histogramm:
@@ -106,7 +106,7 @@ stripchart(weight ~ sex, vertical = TRUE, data = wdata, method = "jitter", jitte
 ```
 
 
-**Check Assumption 3: Homogeneity of variances.**
+**Assumption 3: Equal group variances.**
 
 * **H<sub>0</sub>: Both samples have equal variances**.
 * H<sub>1</sub>: The variances differ.
