@@ -84,14 +84,7 @@ Different descriptives for nominal/ordinal (**discrete**) and metric (**continuo
 
 5109 words obtained from tweets based on Trump's phones (during the presidential election campaign in 2016) had been categorized into 10 sentiments using the NRC Word-Emotion Association lexicon.
 
-**Research question 1:** What were the most common words in Trump's tweeds?
-
-<p align="center">
-   <img src="https://github.com/kagruber2412/Marketing_Research/blob/master/Assets/Trump_Tweets.PNG" width="500" height="400">         
-</p>
-
-
-**Research question 2:** How is the word sentiment of tweets distributed?
+**Research question:** How is the word sentiment of tweets distributed?
 
 ```
 # generate the data
@@ -274,25 +267,34 @@ summary(wdata)
 **Obtain additional information**
 
 * **variance:** mean squared deviation
-* **std. dev.:** square root of the mean squared deviation from the mean
-* **range:** spread of data (difference between lowest and highest value)
-* **median:** value in the middle
 
 ```
 var(wdata$female)
+```
 
+* **std. dev.:** square root of the mean squared deviation from the mean
+
+```
 sqrt(var(wdata$female))
 
 # or alternatively
 sd(wdata$female)
+```
 
+* **range:** spread of data (difference between lowest and highest value)
+
+```
 min(wdata$female)
 
 max(wdata$female)
 
 # or alternatively
 range(wdata$female)
+```
 
+* **median:** value in the middle
+
+```
 median(wdata$female)
 
 mean(wdata$female)
