@@ -310,8 +310,8 @@ mean(wdata$female)
 # make a histogramm of the female weight
 hist(wdata$female)
 
-# change the title
-hist(wdata$female, main="Female weight")
+# change axis labels and title
+hist(wdata$female, xlab="", ylab="", main="Female weight")
 
 # change the color
 hist(wdata$female, main="Female weight", col="grey40")
