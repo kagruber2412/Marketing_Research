@@ -16,14 +16,14 @@ order: 1
    <img src="https://github.com/kagruber2412/Marketing_Research/blob/master/Assets/random.png">         
 </p>
 
-* Formulate H<sub>0</sub> \& H<sub>1</sub>
-* Choose the level of significance &alpha; (e.g. &alpha; = 0.05)
-* Select an appropriate test, based on assumptions about the properties of the underlying data (and grouping variables)
-* Calculate a test statistic T
-* Reject H<sub>0</sub> if p(T) &le; &alpha; or do not reject H<sub>0</sub> if p(T) > &alpha;
+1. Formulate H<sub>0</sub> \& H<sub>1</sub>
+2. Choose the level of significance &alpha; (e.g. &alpha; = 0.05)
+3. Select an appropriate test, based on assumptions about the properties of the underlying data (and grouping variables)
+4. Calculate a test statistic T
+5. Reject H<sub>0</sub> if p(T) &le; &alpha; or do not reject H<sub>0</sub> if p(T) > &alpha;
 
 
-## Formulation of the hypothesis
+## 1. Formulation of the hypothesis
 
 * A **null hypothesis (H<sub>0</sub>)** is a statement of the status quo, one of no difference or no effect. If the null hypothesis is not rejected, no changes will be made.
 * An **alternative hypothesis (H<sub>1</sub>)** is one in which some difference or effect is expected. Accepting the alternative hypothesis will lead to changes in opinions or actions (= **research question**).
@@ -39,7 +39,7 @@ A null hypothesis may be rejected, but it can never be accepted based on a singl
 <img src="https://github.com/kagruber2412/Marketing_Research/blob/master/Assets/hypothesis1.png" width="350" height="350">
 </p>
 
-## Choose critical value
+## 2. Choose critical value
 
 * **Type I error** (&alpha;): occurs when the sample results lead to the rejection of the null hypothesis when it is in fact true (common values: 0.05 or 0.01).
 * **Type II error** (&beta;): occurs when, based on the sample results, the null hypothesis is not rejected when it is in fact false.
@@ -49,7 +49,7 @@ A null hypothesis may be rejected, but it can never be accepted based on a singl
 <img src="https://github.com/kagruber2412/Marketing_Research/blob/master/Assets/significance.png" width="350" height="350">
 </p>
 
-## Test selection
+## 3. Test selection
 
 * Select the appropriate statistical test based on...
 1. the **measurement level** of the variable being tested (nominal, ordinal, interval/ratio)
@@ -61,7 +61,7 @@ A null hypothesis may be rejected, but it can never be accepted based on a singl
 </p>
 
 
-## Accept/Reject
+## 4 & 5. Accept/Reject
 
 * The test statistic follows a certain distribution (e.g. normal, t, &chi;<sup>2</sup>,...)
 
