@@ -56,23 +56,23 @@ A null hypothesis may be rejected, but it can never be accepted based on a singl
 2. **independent** samples (two or more group comparisons on different observation units, also called *unpaired*) or 
 **related** samples (two or more measurement points on the same observation units, also called *paired*)
 
+<p align="center">
+<img src="https://github.com/kagruber2412/Marketing_Research/blob/master/Assets/Summary_Tests.png">
+</p>
+
+
+## Accept/Reject
+
 * The test statistic measures how close the sample is to the null hypothesis and follows a certain distribution (e.g. normal, t, &chi;<sup>2</sup>,...)
 
 <p align="center">
 <img src="https://github.com/kagruber2412/Marketing_Research/blob/master/Assets/hypothesis.png" width="700" height="350">
 </p>
 
-## Accept/Reject
-
 <p align="center">
 <img src="https://github.com/kagruber2412/Marketing_Research/blob/master/Assets/hypothesis2.png" width="350" height="350"> <img src="https://github.com/kagruber2412/Marketing_Research/blob/master/Assets/hypothesis3.png" width="350" height="350">
 </p>
 
-# Overview of univariate tests
-
-<p align="center">
-<img src="https://github.com/kagruber2412/Marketing_Research/blob/master/Assets/Summary_Tests.png">
-</p>
 
 # Nominal variables \& one sample
 
