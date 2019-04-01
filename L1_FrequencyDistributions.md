@@ -164,13 +164,13 @@ barplot(prop.table(table(dat))*100, col="grey40", border=NA, las=3)
    <img src="https://github.com/kagruber2412/Marketing_Research/blob/master/Assets/p3_R.png" width="400" height="400">         
 </p>
 
-**Hint**, list of possible (named) colors available:
+**Hint:** To obtain the list of possible (named) colors available try:
 
 ```
 colors()
 ```
 
-For more annotations try:
+For more graph annotations try:
 ``` 
 ?barplot
 ```
