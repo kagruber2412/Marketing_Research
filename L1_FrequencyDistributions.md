@@ -23,7 +23,7 @@ order: 1
 
 <hr>
 
-Different descriptives for nominal/ordinal (*discrete*) and metric (*continuous*) data.
+Different descriptives for nominal/ordinal (**discrete**) and metric (**continuous**) data.
 
 ### Discrete data
 
@@ -84,14 +84,14 @@ Different descriptives for nominal/ordinal (*discrete*) and metric (*continuous*
 
 5109 words obtained from tweets based on Trump's phones (during the presidential election campaign in 2016) had been categorized into 10 sentiments using the NRC Word-Emotion Association lexicon.
 
-**Research question example 1:** What were the most common words in Trump's tweeds?
+**Research question 1:** What were the most common words in Trump's tweeds?
 
 <p align="center">
    <img src="https://github.com/kagruber2412/Marketing_Research/blob/master/Assets/Trump_Tweets.PNG">         
 </p>
 
 
-**Research question example 2:** How is the word sentiment of tweets distributed?
+**Research question 2:** How is the word sentiment of tweets distributed?
 
 ```
 # generate the data
@@ -148,7 +148,7 @@ What can this mean?
 </p>
 
 
-### Standard bar graph
+### Standard graph
 
 ```
 # frequencies
@@ -182,7 +182,31 @@ For more annotations try:
 ?barplot
 ```
 
-### ggplot bar graph
+### ggplot
+
+```
+# load ggplot
+library(ggplot2)
+
+# convert word table into a data frame
+dat2 <- as.data.frame(prop.table(table(dat))*100)
+
+bar <- ggplot(data=dat2, aes(x=dat, y=Freq)) +
+     geom_bar(stat="identity")
+bar
+
+# change the axis labels
+bar <- bar + xlab("") + ylab("")
+bar
+
+# rotate the bars
+bar <- bar + coord_flip()
+bar
+
+# change the background (theme)
+bar <- bar + theme_minimal()
+bar
+```
 
 
 # Continuous variables
