@@ -87,7 +87,7 @@ Different descriptives for nominal/ordinal (**discrete**) and metric (**continuo
 **Research question 1:** What were the most common words in Trump's tweeds?
 
 <p align="center">
-   <img src="https://github.com/kagruber2412/Marketing_Research/blob/master/Assets/Trump_Tweets.PNG" width="600" height="400">         
+   <img src="https://github.com/kagruber2412/Marketing_Research/blob/master/Assets/Trump_Tweets.PNG" width="500" height="400">         
 </p>
 
 
