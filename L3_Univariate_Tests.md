@@ -61,9 +61,8 @@ rbind(mean., sd.)
 
 **Assumption 2: Normal distributed data in each group.**
 
+### Standard graph
 ```
-# a more advanced histogramm:
-
 hist(female, col=adjustcolor("purple", 0.6), main="", breaks=15, border=NA, prob=TRUE, xlab="Body weight", ylim=c(0,0.06))
 hist(male, col=adjustcolor("steelblue", 0.6), add=T, breaks=15, border=NA, prob=TRUE)
 
@@ -72,6 +71,11 @@ lines(density(male, n=150, cut=5)$x, density(male, n=150, cut=5)$y, lwd=4, col="
 
 # add a legend to the plot
 legend("topleft", legend=c("female","male"), fill=c("purple","steelblue"), border=NA, bty="n", cex=2)
+```
+
+### ggplot
+```
+
 ```
 
 ## Excursus: Boxplot
@@ -86,6 +90,7 @@ legend("topleft", legend=c("female","male"), fill=c("purple","steelblue"), borde
 </p>
 
 
+### Standard graph
 ```
 boxplot(weight ~ sex, main="Boxplot: Body weight data", col=c("purple","steelblue"), data=wdata)
 ```
@@ -105,6 +110,7 @@ boxplot(weight ~ sex, main="Boxplot: Body weight data", col=c("purple","steelblu
 stripchart(weight ~ sex, vertical = TRUE, data = wdata, method = "jitter", jitter=0.05, add = TRUE, pch = 16, col = adjustcolor("grey40",0.4), cex=1.25)
 ```
 
+### ggplot
 
 **Assumption 3: Equal group variances.**
 
