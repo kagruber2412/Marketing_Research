@@ -17,8 +17,8 @@ order: 1
 </p>
 
 1. Formulate H<sub>0</sub> \& H<sub>1</sub>
-2. Choose the critical value &alpha; (e.g. &alpha; = 0.05)
-3. Select an appropriate test, based on assumptions about the properties of the underlying data (and grouping variables)
+2. Select an appropriate test, based on assumptions about the properties of the underlying data (and grouping variables)
+3. Choose the critical value &alpha;
 4. Calculate a test statistic T
 5. Reject H<sub>0</sub> if p(T) &le; &alpha; or do not reject H<sub>0</sub> if p(T) > &alpha;
 
@@ -35,7 +35,20 @@ A null hypothesis may be rejected, but it can never be accepted based on a singl
 * H<sub>0</sub> = mean<sub>(female)</sub> = mean<sub>(male)</sub>
 * H<sub>1</sub> = mean<sub>(female)</sub> &ne; mean<sub>(male)</sub>
 
-## 2. Choose the critical value &alpha;
+
+## 2. Select the statistical test
+
+* Select an appropriate statistical test based on assumptions about...
+1. the **measurement level** of the variable being tested (nominal, ordinal, interval/ratio)
+2. **independent** samples (two or more group comparisons on different observation units, also called *unpaired*) or 
+**related** samples (two or more measurement points on the same observation units, also called *paired*)
+
+<p align="center">
+<img src="https://github.com/kagruber2412/Marketing_Research/blob/master/Assets/Summary_Tests.png">
+</p>
+
+
+## 3. Choose the critical value &alpha;
 
 * **Type I error** (**false positive**): Drawing a sample from a population involves the possibility that the observed effect ocurred due to sampling error. (i.e., H<sub>0</sub> is true in the underlying population but based on the sample results H<sub>0</sub> is rejected). A test's probability of making a type I error is denoted by **&alpha;**.
 * **Type II error** (**&beta;**): H<sub>1</sub> is true in the underlying population. Based on the sample results  H<sub>0</sub> is not rejected.
@@ -59,18 +72,6 @@ the p-value of a result, p, is the probability of obtaining a result at least as
 
 <p align="center">
 <img src="https://github.com/kagruber2412/Marketing_Research/blob/master/Assets/hypothesis1.png" width="350" height="350">
-</p>
-
-
-## 3. Select the statistical test
-
-* Select an appropriate statistical test based on assumptions about...
-1. the **measurement level** of the variable being tested (nominal, ordinal, interval/ratio)
-2. **independent** samples (two or more group comparisons on different observation units, also called *unpaired*) or 
-**related** samples (two or more measurement points on the same observation units, also called *paired*)
-
-<p align="center">
-<img src="https://github.com/kagruber2412/Marketing_Research/blob/master/Assets/Summary_Tests.png">
 </p>
 
 
