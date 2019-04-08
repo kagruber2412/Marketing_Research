@@ -38,7 +38,7 @@ A null hypothesis may be rejected, but it can never be accepted based on a singl
 
 ## 2. Select the statistical test
 
-* Select an appropriate statistical test based on assumptions about...
+Select an appropriate statistical test based on assumptions about...
 1. the **measurement level** of the variable being tested (nominal, ordinal, interval/ratio)
 2. **independent** samples (two or more group comparisons on different observation units, also called *unpaired*) or 
 **related** samples (two or more measurement points on the same observation units, also called *paired*)
