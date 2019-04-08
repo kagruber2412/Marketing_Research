@@ -35,10 +35,6 @@ A null hypothesis may be rejected, but it can never be accepted based on a singl
 * H<sub>0</sub> = mean<sub>(female)</sub> = mean<sub>(male)</sub>
 * H<sub>1</sub> = mean<sub>(female)</sub> &ne; mean<sub>(male)</sub>
 
-<p align="center">
-<img src="https://github.com/kagruber2412/Marketing_Research/blob/master/Assets/hypothesis1.png" width="350" height="350">
-</p>
-
 ## 2. Choose the critical value &alpha;
 
 * **Type I error** (**false positive**): Drawing a sample from a population involves the possibility that the observed effect ocurred due to sampling error. (i.e., H<sub>0</sub> is true in the underlying population but based on the sample results H<sub>0</sub> is rejected). A test's probability of making a type I error is denoted by **&alpha;**.
@@ -57,10 +53,14 @@ A threshold value can be varied to make the test more restrictive or more sensit
 the p-value of a result, p, is the probability of obtaining a result at least as extreme, given that the null hypothesis were true.
 -->
 
-
 <p align="center">
 <img src="https://github.com/kagruber2412/Marketing_Research/blob/master/Assets/significance.png" width="350" height="350">
 </p>
+
+<p align="center">
+<img src="https://github.com/kagruber2412/Marketing_Research/blob/master/Assets/hypothesis1.png" width="350" height="350">
+</p>
+
 
 ## 3. Select the statistical test
 
