@@ -17,7 +17,7 @@ order: 1
 </p>
 
 1. Formulate H<sub>0</sub> \& H<sub>1</sub>
-2. Select an appropriate test, based on assumptions about the properties of the underlying data (and grouping variables)
+2. Select an appropriate test, based on assumptions about the properties of the underlying data
 3. Choose the critical value &alpha;
 4. Calculate a test statistic T
 5. Reject H<sub>0</sub> if p(T) &le; &alpha; or do not reject H<sub>0</sub> if p(T) > &alpha;
