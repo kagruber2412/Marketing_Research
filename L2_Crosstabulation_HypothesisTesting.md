@@ -41,11 +41,11 @@ A null hypothesis may be rejected, but it can never be accepted based on a singl
 
 ## 2. Choose the critical value &alpha;
 
-* **Type I error** (**&alpha;**): Drawing a sample from a population involves the possibility that the observed effect ocurred due to sampling error. (i.e., H<sub>0</sub> is true in the underlying population. Based on the sample results H<sub>0</sub> is rejected). To minimize the possibility of wrongly rejecting the null hypothesis common values for &alpha; are 0.05 or 0.01.
+* **Type I error** (**false positive**): Drawing a sample from a population involves the possibility that the observed effect ocurred due to sampling error. (i.e., H<sub>0</sub> is true in the underlying population but based on the sample results H<sub>0</sub> is rejected). A test's probability of making a type I error is denoted by **&alpha;**.
 * **Type II error** (**&beta;**): H<sub>1</sub> is true in the underlying population. Based on the sample results  H<sub>0</sub> is not rejected.
 * **Test power** (**1 - &beta;**): the probability of correctly rejecting the null hypothesis.
 
-
+To minimize the possibility of wrongly rejecting the null hypothesis common values for &alpha; are 0.05 or 0.01.
 
 the p-value of a result, p, is the probability of obtaining a result at least as extreme, given that the null hypothesis were true.
 
