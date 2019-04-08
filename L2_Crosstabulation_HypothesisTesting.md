@@ -45,9 +45,17 @@ A null hypothesis may be rejected, but it can never be accepted based on a singl
 * **Type II error** (**&beta;**): H<sub>1</sub> is true in the underlying population. Based on the sample results  H<sub>0</sub> is not rejected.
 * **Test power** (**1 - &beta;**): the probability of correctly rejecting the null hypothesis.
 
+<!--
 To minimize the possibility of wrongly rejecting the null hypothesis common values for &alpha; are 0.05 or 0.01.
 
+Statistical tests always involve a trade-off between:
+
+the acceptable level of false positives (in which a non-match is declared to be a match) and
+the acceptable level of false negatives (in which an actual match is not detected).
+A threshold value can be varied to make the test more restrictive or more sensitive, with the more restrictive tests increasing the risk of rejecting true positives, and the more sensitive tests increasing the risk of accepting false positives.
+
 the p-value of a result, p, is the probability of obtaining a result at least as extreme, given that the null hypothesis were true.
+-->
 
 
 <p align="center">
